@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="gaq-commons" />
+        <module name="gaq-dao" />
+        <module name="gaq-entity" />
+        <module name="gaq-service" />
+        <module name="gaq-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gaq-commons" target="1.8" />
+      <module name="gaq-dao" target="1.8" />
+      <module name="gaq-entity" target="1.8" />
+      <module name="gaq-parent" target="1.8" />
+      <module name="gaq-service" target="1.8" />
+      <module name="gaq-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gaq-commons" options="-parameters" />
+      <module name="gaq-dao" options="-parameters" />
+      <module name="gaq-entity" options="-parameters" />
+      <module name="gaq-parent" options="" />
+      <module name="gaq-service" options="-parameters" />
+      <module name="gaq-web" options="-parameters" />
+    </option>
+  </component>
+</project>

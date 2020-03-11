@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="03a541a2-4605-451d-a895-e7d9fb117791" name="Default Changelist" comment="shiro配置jar包" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/gaq-entity/target/" />
+    <ignored path="$PROJECT_DIR$/gaq-service/target/" />
+    <ignored path="$PROJECT_DIR$/gaq-dao/target/" />
+    <ignored path="$PROJECT_DIR$/gaq-web/target/" />
+    <ignored path="$PROJECT_DIR$/../gaq-web/target/" />
+    <ignored path="$PROJECT_DIR$/../gaq-entity/target/" />
+    <ignored path="$PROJECT_DIR$/../gaq-service/target/" />
+    <ignored path="$PROJECT_DIR$/../gaq-dao/target/" />
+    <ignored path="$PROJECT_DIR$/gaq-commons/target/" />
+    <ignored path="$PROJECT_DIR$/../gaq-commons/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jee@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/controller/HellowordController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>list</find>
+      <find>localhost</find>
+      <find>id</find>
+      <find>&quot;ID&quot;</find>
+      <find>ID</find>
+      <find>GeneratedValue</find>
+      <find>change-log</find>
+      <find>doGetAuthenticationInfo</find>
+      <find>authorizationAttributeSourceAdvisor</find>
+      <find>core</find>
+      <find>adminPermissionMap</find>
+      <find>javax</find>
+      <find>gdal</find>
+      <find>duqu</find>
+      <find>selectByPrimaryKey</find>
+      <find>updateByPrimaryKeySelective</find>
+      <find>alibaba</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../gaq-commons/src/main/java/com/ghkj/gaqcommons/untils/DateTimeUtil.java" />
+        <option value="$PROJECT_DIR$/../gaq-commons/src/main/java/com/ghkj/gaqcommons/untils/TokenUtils.java" />
+        <option value="$PROJECT_DIR$/../gaq-commons/src/main/java/com/ghkj/gaqcommons/untils/ZipUtil.java" />
+        <option value="$PROJECT_DIR$/../gaq-commons/src/main/java/com/ghkj/gaqcommons/untils/JSONDataUtil.java" />
+        <option value="$PROJECT_DIR$/../gaq-commons/src/main/java/com/ghkj/gaqcommons/untils/PageUtil.java" />
+        <option value="$PROJECT_DIR$/../gaq-commons/src/main/java/com/ghkj/gaqcommons/untils/ExportExcelUtil.java" />
+        <option value="$PROJECT_DIR$/../gaq-commons/src/main/java/com/ghkj/gaqcommons/untils/JsonFormatTool.java" />
+        <option value="$PROJECT_DIR$/../gaq-commons/src/main/java/com/ghkj/gaqcommons/untils/ZIPUtil.java" />
+        <option value="$PROJECT_DIR$/../gaq-service/src/main/java/com/ghkj/gaqservice/service/ZipDealService.java" />
+        <option value="$PROJECT_DIR$/../gaq-service/src/main/java/com/ghkj/gaqservice/service/impl/ZipDealServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/controller/ZipDealController.java" />
+        <option value="$PROJECT_DIR$/../gaq-entity/src/main/java/com/ghkj/gaqentity/GuoConfigureImage.java" />
+        <option value="$PROJECT_DIR$/../gaq-entity/src/main/java/com/ghkj/gaqentity/Photo.java" />
+        <option value="$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/controller/UploadImageController.java" />
+        <option value="$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/untils/ReadTiff.java" />
+        <option value="$PROJECT_DIR$/../gaq-commons/src/main/java/com/ghkj/gaqcommons/untils/DownloadUtils.java" />
+        <option value="$PROJECT_DIR$/../gaq-service/src/main/java/com/ghkj/gaqservice/service/impl/UploadImageServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../gaq-commons/src/main/java/com/ghkj/gaqcommons/untils/GeoTagMapBuilder.java" />
+        <option value="$PROJECT_DIR$/../gaq-commons/src/main/java/com/ghkj/gaqcommons/untils/ReadTifUtil.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../gaq-commons/pom.xml" />
+        <option value="$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/controller/GDALTestEnvironment.java" />
+        <option value="$PROJECT_DIR$/../gaq-commons/src/main/java/com/ghkj/gaqcommons/untils/ReadTiff.java" />
+        <option value="$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/config/ShiroConfig.java" />
+        <option value="$PROJECT_DIR$/../gaq-entity/src/main/java/com/ghkj/gaqentity/Degree.java" />
+        <option value="$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/controller/LocationController.java" />
+        <option value="$PROJECT_DIR$/../gaq-entity/src/main/java/com/ghkj/gaqentity/GeoCoordinate.java" />
+        <option value="$PROJECT_DIR$/../gaq-web/src/main/resources/mybatis-generator/mybatisGeneratorinit.properties" />
+        <option value="$PROJECT_DIR$/../gaq-web/src/main/resources/mybatis-generator/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/../gaq-service/src/main/java/com/ghkj/gaqservice/service/impl/AdminUserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../gaq-entity/src/main/java/com/ghkj/gaqentity/Eat.java" />
+        <option value="$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/GaqWebApplication.java" />
+        <option value="$PROJECT_DIR$/../gaq-dao/src/main/resources/xml/EatMapper.xml" />
+        <option value="$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/mapper/EatMapper.java" />
+        <option value="$PROJECT_DIR$/../gaq-dao/src/main/resources/xml/AdminPermissionMapper.xml" />
+        <option value="$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/mapper/AdminPermissionMapper.java" />
+        <option value="$PROJECT_DIR$/../gaq-entity/src/main/java/com/ghkj/gaqentity/AdminUser.java" />
+        <option value="$PROJECT_DIR$/../gaq-entity/src/main/java/com/ghkj/gaqentity/AdminPermission.java" />
+        <option value="$PROJECT_DIR$/../gaq-entity/src/main/java/com/ghkj/gaqentity/ConfigureImage.java" />
+        <option value="$PROJECT_DIR$/../gaq-entity/src/main/java/com/ghkj/gaqentity/AdminRole.java" />
+        <option value="$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/mapper/AdminRoleMapper.java" />
+        <option value="$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/mapper/AdminUserMapper.java" />
+        <option value="$PROJECT_DIR$/../gaq-dao/src/main/resources/xml/AdminUserMapper.xml" />
+        <option value="$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/mapper/ConfigureImageMapper.java" />
+        <option value="$PROJECT_DIR$/../gaq-dao/src/main/resources/xml/AdminRoleMapper.xml" />
+        <option value="$PROJECT_DIR$/../gaq-dao/src/main/resources/xml/ConfigureImageMapper.xml" />
+        <option value="$PROJECT_DIR$/../gaq-web/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/../gaq-web/pom.xml" />
+        <option value="$PROJECT_DIR$/../gaq-web/src/main/resources/generator/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/controller/HellowordController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="G:\mavenlocal" />
+        <option name="mavenHome" value="E:/softWare/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="E:\softWare\apache-maven-3.6.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="593" />
+    <option name="width" value="775" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1583835810220" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.56653225" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ghkj.gaqcommons.untils" />
+      <recent name="com.ghkj.gaqservice.service.impl" />
+      <recent name="com.ghkj.gaqservice.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\mystudy\gaq-commons\src\main\resources" />
+      <recent name="G:\mystudy\gaq-web\src\main\resources\lib" />
+      <recent name="G:\mystudy\gaq-commons\src\main\java\com\ghkj\gaqcommons\untils" />
+      <recent name="G:\mystudy\gaq-commons\src\main\resources\lib" />
+      <recent name="G:\mystudy\gaq-entity\src\main\java\com\ghkj\gaqentity" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.GaqWebApplication">
+    <configuration name="GDALTestEnvironment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ghkj.gaqweb.controller.GDALTestEnvironment" />
+      <module name="gaq-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ghkj.gaqweb.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HellowordController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ghkj.gaqweb.controller.HellowordController" />
+      <module name="gaq-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ghkj.gaqweb.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocationController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ghkj.gaqweb.controller.LocationController" />
+      <module name="gaq-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ghkj.gaqweb.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadTifUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ghkj.gaqcommons.untils.ReadTifUtil" />
+      <module name="gaq-commons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ghkj.gaqcommons.untils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadTiff" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ghkj.gaqcommons.untils.ReadTiff" />
+      <module name="gaq-commons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ghkj.gaqcommons.untils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GaqCommonsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gaq-commons" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ghkj.gaqcommons.GaqCommonsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GaqDaoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gaq-dao" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ghkj.gaqdao.GaqDaoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GaqEntityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gaq-entity" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ghkj.gaqentity.GaqEntityApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GaqServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gaq-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ghkj.gaqservice.GaqServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GaqWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gaq-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ghkj.gaqweb.GaqWebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HellowordController" />
+        <item itemvalue="Application.LocationController" />
+        <item itemvalue="Application.ReadTiff" />
+        <item itemvalue="Application.GDALTestEnvironment" />
+        <item itemvalue="Application.ReadTifUtil" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="03a541a2-4605-451d-a895-e7d9fb117791" name="Default Changelist" comment="" />
+      <created>1567390462667</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567390462667</updated>
+      <workItem from="1567390467084" duration="4587000" />
+      <workItem from="1567395155719" duration="17700000" />
+      <workItem from="1567561663352" duration="22895000" />
+      <workItem from="1567645550328" duration="26594000" />
+      <workItem from="1567731843906" duration="26688000" />
+      <workItem from="1567990991777" duration="873000" />
+      <workItem from="1568624242779" duration="671000" />
+      <workItem from="1568861475811" duration="2402000" />
+      <workItem from="1569228230334" duration="2724000" />
+      <workItem from="1569289755203" duration="13000" />
+      <workItem from="1569314989788" duration="3552000" />
+      <workItem from="1569376860417" duration="19324000" />
+      <workItem from="1569460196438" duration="6146000" />
+      <workItem from="1571110173749" duration="11971000" />
+      <workItem from="1571209918729" duration="4905000" />
+      <workItem from="1571274968287" duration="2016000" />
+      <workItem from="1571642612810" duration="3453000" />
+      <workItem from="1571811160993" duration="3294000" />
+      <workItem from="1573182022117" duration="1105000" />
+      <workItem from="1573440062906" duration="6958000" />
+      <workItem from="1573536182892" duration="12338000" />
+      <workItem from="1573608333317" duration="25811000" />
+      <workItem from="1573697535633" duration="15229000" />
+      <workItem from="1573780280703" duration="27567000" />
+      <workItem from="1574052928620" duration="4774000" />
+      <workItem from="1574133990876" duration="3356000" />
+      <workItem from="1574216813200" duration="9046000" />
+      <workItem from="1574670059193" duration="415000" />
+      <workItem from="1574838338228" duration="3609000" />
+      <workItem from="1575012268982" duration="7024000" />
+      <workItem from="1575093852498" duration="8777000" />
+      <workItem from="1575250381377" duration="20649000" />
+      <workItem from="1575423844375" duration="21188000" />
+      <workItem from="1575509668970" duration="15802000" />
+      <workItem from="1575595977575" duration="10751000" />
+      <workItem from="1576026408127" duration="2326000" />
+      <workItem from="1576295388595" duration="592000" />
+      <workItem from="1577087366541" duration="105000" />
+      <workItem from="1577151543916" duration="3272000" />
+      <workItem from="1578024857386" duration="11487000" />
+      <workItem from="1578274829072" duration="8798000" />
+      <workItem from="1578377805182" duration="207000" />
+      <workItem from="1578447321289" duration="1881000" />
+      <workItem from="1578449742206" duration="2774000" />
+      <workItem from="1578453918567" duration="12193000" />
+      <workItem from="1578532937501" duration="13356000" />
+      <workItem from="1578619033516" duration="5660000" />
+      <workItem from="1578641665918" duration="391000" />
+      <workItem from="1578642122541" duration="3750000" />
+      <workItem from="1578809815497" duration="1965000" />
+      <workItem from="1578812710290" duration="2092000" />
+      <workItem from="1578815438585" duration="1537000" />
+      <workItem from="1578818026909" duration="4243000" />
+      <workItem from="1578878819880" duration="14260000" />
+      <workItem from="1582608234343" duration="2849000" />
+      <workItem from="1582698995634" duration="1428000" />
+      <workItem from="1582768718389" duration="8774000" />
+      <workItem from="1582855290580" duration="41000" />
+      <workItem from="1582855413684" duration="16000" />
+      <workItem from="1582855585113" duration="69000" />
+      <workItem from="1582856073830" duration="668000" />
+      <workItem from="1582857131882" duration="21000" />
+      <workItem from="1582857702699" duration="159000" />
+      <workItem from="1582858025562" duration="442000" />
+      <workItem from="1582860452934" duration="12031000" />
+      <workItem from="1583110325967" duration="28547000" />
+      <workItem from="1583197768061" duration="27670000" />
+      <workItem from="1583283512950" duration="19676000" />
+      <workItem from="1583369765153" duration="15118000" />
+      <workItem from="1583731647705" duration="6719000" />
+      <workItem from="1583804665575" duration="8665000" />
+      <workItem from="1583819918333" duration="5461000" />
+      <workItem from="1583825921358" duration="7792000" />
+      <workItem from="1583834229719" duration="1626000" />
+      <workItem from="1583903401448" duration="249000" />
+    </task>
+    <task id="LOCAL-00001" summary="练习项目">
+      <created>1571216254788</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1571216254789</updated>
+    </task>
+    <task id="LOCAL-00002" summary="练习项目">
+      <created>1571217349549</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1571217349549</updated>
+    </task>
+    <task id="LOCAL-00003" summary="生成实体">
+      <created>1573719486717</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1573719486717</updated>
+    </task>
+    <task id="LOCAL-00004" summary="实体">
+      <created>1573719735267</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573719735268</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="593117000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24054463" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="Persistence" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3967213" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38032788" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.3295082" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.49016392" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.38196722" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3295082" />
+      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" weight="0.3295082" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.19364598" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.04765507" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.32980332" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2677761" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="Persistence" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3967213" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38032788" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.3295082" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.49016392" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.38196722" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3295082" />
+      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" weight="0.3295082" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.19364598" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.04765507" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.32980332" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="练习项目" />
+    <MESSAGE value="生成实体" />
+    <MESSAGE value="实体" />
+    <MESSAGE value="shiro配置jar包" />
+    <option name="LAST_COMMIT_MESSAGE" value="shiro配置jar包" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="334" height="318" key="Git.Branch.Popup" />
+    <state width="334" height="318" key="Git.Branch.Popup/1366.768" />
+    <state width="334" height="318" key="Git.Branch.Popup@1366.768" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="3798" column="30" selection-start-line="3798" selection-start-column="30" selection-end-line="3798" selection-end-column="30" />
+          <folding>
+            <element signature="e#177013#177014#0" expanded="true" />
+            <element signature="e#177054#177055#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="139" column="57" selection-start-line="139" selection-start-column="57" selection-end-line="139" selection-end-column="57" />
+          <folding>
+            <element signature="e#5644#5645#0" expanded="true" />
+            <element signature="e#5675#5676#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-entity/src/main/java/com/ghkj/gaqentity/GeoCoordinate.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="196" column="59" selection-start-line="196" selection-start-column="59" selection-end-line="196" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.9.RELEASE/spring-web-5.1.9.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="31" column="94" selection-start-line="31" selection-start-column="94" selection-end-line="31" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/utils/RedisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/utils/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/resources/liquibase/change_log/testbasesql.xml" />
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/resources/liquibase/master.xml" />
+    <entry file="file://$PROJECT_DIR$/../gaq-dao/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="61" column="48" lean-forward="true" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-entity/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108">
+          <caret line="26" column="56" lean-forward="true" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1020">
+          <caret line="6" column="43" lean-forward="true" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/resources/mybatis-generator/mybatisGeneratorinit.properties" />
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqdao/mapper/EatMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqdao/mapper/EatMapper.java" />
+    <entry file="file://$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/mapper/EatMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/../gaq-entity/com/ghkj/gaqentity/Eat.java" />
+    <entry file="file://$PROJECT_DIR$/../gaq-service/src/main/java/com/ghkj/gaqservice/service/impl/UploadImageServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-291">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-service/src/main/java/com/ghkj/gaqservice/service/impl/LoginServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="50" column="48" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-service/src/main/java/com/ghkj/gaqservice/service/impl/HjjServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="112" column="76" selection-start-line="112" selection-start-column="63" selection-end-line="112" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-service/src/main/java/com/ghkj/gaqservice/service/impl/ZipDealServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="107" column="37" lean-forward="true" selection-start-line="107" selection-start-column="37" selection-end-line="107" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-service/src/main/java/com/ghkj/gaqservice/service/impl/RoleAndPermissServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="33" column="43" lean-forward="true" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/config/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="132" column="7" selection-start-line="132" selection-start-column="7" selection-end-line="132" selection-end-column="7" />
+          <folding>
+            <element signature="e#1303#1319#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-commons/src/main/java/com/ghkj/gaqcommons/untils/MyMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="30" column="16" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/tk/mybatis/mapper/3.5.3/mapper-3.5.3.jar!/tk/mybatis/mapper/common/base/select/SelectByPrimaryKeyMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/controller/HjjController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <folding>
+            <element signature="e#3073#3074#0" expanded="true" />
+            <element signature="e#3128#3129#0" expanded="true" />
+            <element signature="e#3489#3490#0" expanded="true" />
+            <element signature="e#3538#3539#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-entity/src/main/java/com/ghkj/gaqentity/Eat.java" />
+    <entry file="file://$PROJECT_DIR$/../gaq-dao/src/main/resources/xml/EatMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/mapper/EatMapper.java" />
+    <entry file="file://$PROJECT_DIR$/../gaq-service/src/main/java/com/ghkj/gaqservice/service/AdminUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-service/src/main/java/com/ghkj/gaqservice/service/impl/AdminUserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1431">
+          <caret line="67" column="70" lean-forward="true" selection-start-line="67" selection-start-column="70" selection-end-line="67" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/mapper/AdminPermissionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/mapper/AdminRoleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="62" lean-forward="true" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/mapper/AdminUserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="62" lean-forward="true" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/mapper/ConfigureImageMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-dao/src/main/resources/xml/AdminPermissionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-dao/src/main/resources/xml/AdminRoleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-dao/src/main/resources/xml/AdminUserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-dao/src/main/resources/xml/ConfigureImageMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-entity/src/main/java/com/ghkj/gaqentity/AdminPermission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-entity/src/main/java/com/ghkj/gaqentity/AdminRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-entity/src/main/java/com/ghkj/gaqentity/AdminUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-304">
+          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-entity/src/main/java/com/ghkj/gaqentity/ConfigureImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-223">
+          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/GaqWebApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="61" lean-forward="true" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-507">
+          <caret line="36" column="42" lean-forward="true" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-web/HELP.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1356">
+          <caret line="132" column="22" lean-forward="true" selection-start-line="132" selection-start-column="22" selection-end-line="132" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="192" column="92" lean-forward="true" selection-start-line="192" selection-start-column="92" selection-end-line="192" selection-end-column="92" />
+          <folding>
+            <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/resources/generator/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/controller/HellowordController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.56653225" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.56653225" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.56653225" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.56653225" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>gaq-service</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.56653225" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.56653225" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

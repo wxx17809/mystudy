@@ -1,0 +1,12 @@
+com\ghkj\gaqservice\service\UploadImageServive.class
+com\ghkj\gaqservice\service\ZipDealService.class
+com\ghkj\gaqservice\service\LoginService.class
+com\ghkj\gaqservice\service\RoleAndPermissService.class
+com\ghkj\gaqservice\service\impl\AdminUserServiceImpl.class
+com\ghkj\gaqservice\service\HjjService.class
+com\ghkj\gaqservice\service\impl\HjjServiceImpl.class
+com\ghkj\gaqservice\service\AdminUserService.class
+com\ghkj\gaqservice\service\impl\LoginServiceImpl.class
+com\ghkj\gaqservice\service\impl\ZipDealServiceImpl.class
+com\ghkj\gaqservice\service\impl\RoleAndPermissServiceImpl.class
+com\ghkj\gaqservice\service\impl\UploadImageServiceImpl.class

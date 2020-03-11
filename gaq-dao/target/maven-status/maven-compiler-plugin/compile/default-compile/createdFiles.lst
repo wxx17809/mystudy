@@ -1,0 +1,5 @@
+com\ghkj\gaqdao\mapper\AdminPermissionMapper.class
+com\ghkj\gaqdao\mapper\UserMapper.class
+com\ghkj\gaqdao\mapper\AdminRoleMapper.class
+com\ghkj\gaqdao\utils\RedisConfig.class
+com\ghkj\gaqdao\utils\RedisUtil.class

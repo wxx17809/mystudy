@@ -1,0 +1,49 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <property name="autoIncrement" value="true" dbms="mysql"/>
+    <changeSet id="20191114wxx1" author="wxx" context="!jwgly and !beta">
+        <sql>
+            <![CDATA[
+                CREATE TABLE `admin_user` (
+                  `ID` int(10) NOT NULL AUTO_INCREMENT COMMENT '主键',
+                  `USERNAME` varchar(255) DEFAULT NULL COMMENT '用户名',
+                  `PASSWORD` varchar(255) DEFAULT NULL COMMENT '密码',
+                  `NAME` varchar(255) DEFAULT NULL COMMENT '姓名',
+                  `ROLE_ID` int(11) DEFAULT NULL COMMENT '权限组id',
+                  `LAST_LOGIN_TIME` datetime DEFAULT NULL COMMENT '上次登录时间',
+                  `LOGIN_TIME` datetime DEFAULT NULL COMMENT '登录时间',
+                  `IS_DISABLED` int(2) DEFAULT NULL COMMENT '是否禁用0正常1禁用 ',
+                  `CREATETIME` datetime DEFAULT NULL COMMENT '创建时间',
+                  PRIMARY KEY (`ID`) USING BTREE,
+                  UNIQUE KEY `INDEX_USERNAME` (`USERNAME`) USING BTREE
+                ) ENGINE=InnoDB AUTO_INCREMENT=58 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='说明:运营平台用户';
+             ]]>
+            <comment>用户表</comment>
+        </sql>
+    </changeSet>
+
+    <changeSet id="20191202wxx" author="wxx" context="!jwgly and !beta">
+        <sql>
+            <![CDATA[
+            CREATE TABLE `guo_configure_image` (
+            `IMAGE_ID` INT ( 11 ) NOT NULL AUTO_INCREMENT COMMENT '图片ID',
+            `TITLE` VARCHAR ( 64 ) DEFAULT NULL COMMENT '图片描述',
+            `IMAGE_TYPE` VARCHAR ( 16 ) DEFAULT NULL COMMENT '类型',
+            `IMAGE_SRC` VARCHAR ( 255 ) DEFAULT NULL COMMENT '地址',
+            `TYPE` INT ( 4 ) DEFAULT NULL COMMENT '商品关联类型  0：分类  1：链接',
+            `IMAGE_CATEGORY` INT ( 16 ) DEFAULT NULL COMMENT '图片对应的商品分类',
+            `IMAGE_URL` VARCHAR ( 100 ) DEFAULT NULL COMMENT '链接',
+            `APP_URL` VARCHAR ( 100 ) DEFAULT NULL COMMENT 'APP链接',
+            `CREATETIME` BIGINT ( 16 ) DEFAULT NULL COMMENT '创建时间',
+            `ISDELETE` TINYINT ( 4 ) DEFAULT '0' COMMENT '是否删除',
+            PRIMARY KEY ( `IMAGE_ID` )
+            ) ENGINE = INNODB AUTO_INCREMENT = 143 DEFAULT CHARSET = utf8 COMMENT = '图片配置表';
+            ]]>
+            <comment>图片配置表</comment>
+        </sql>
+
+    </changeSet>
+</databaseChangeLog>
