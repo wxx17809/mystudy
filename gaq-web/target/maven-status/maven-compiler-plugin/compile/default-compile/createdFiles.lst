@@ -1,6 +1,5 @@
 com\ghkj\gaqweb\controller\LoginController.class
 com\ghkj\gaqweb\config\WebMvcConfig.class
-com\ghkj\gaqweb\controller\LocationController.class
 com\ghkj\gaqweb\controller\HellowordController.class
 com\ghkj\gaqweb\config\Myconfig.class
 com\ghkj\gaqweb\GaqWebApplication.class
@@ -12,5 +11,4 @@ com\ghkj\gaqweb\controller\ZipDealController.class
 com\ghkj\gaqweb\config\ShiroConfig.class
 com\ghkj\gaqweb\controller\UserController.class
 com\ghkj\gaqweb\config\SwaggerConfig.class
-com\ghkj\gaqweb\untils\SSHHelper.class
 com\ghkj\gaqweb\filter\CorsFilter.class

@@ -48,7 +48,7 @@ public class LoginServiceImpl implements LoginService {
             dataMap.put("success",true);
             dataMap.put("msg","登录成功");
             AdminUser adminUser=adminUserService.findByUserName(userName);
-            String tokens = TokenTest(adminUser.getId());
+            String tokens = TokenTest(adminUser.getId().longValue());
             dataMap.put("token",tokens);
             SessionUtil.setAdminUser(adminUser);
         } catch (UnknownAccountException e) {

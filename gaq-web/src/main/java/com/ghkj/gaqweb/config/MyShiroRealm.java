@@ -39,7 +39,7 @@ public class MyShiroRealm extends AuthorizingRealm {
             return authorizationInfo;
         }
         //根据用户组获取权限点集合
-        List<String> list = roleAndPermissService.findRole(marketAdminUser.getRoleId());
+        List<String> list = roleAndPermissService.findRole(marketAdminUser.getRoleId().longValue());
         //权限加载
         authorizationInfo.addStringPermissions(list);
         return authorizationInfo;

@@ -1,3 +1,4 @@
+/*
 package com.ghkj.gaqweb.untils;
 
 import java.io.BufferedReader;
@@ -8,14 +9,17 @@ import com.jcraft.jsch.ChannelExec;
 import com.jcraft.jsch.JSch;
 import com.jcraft.jsch.Session;
 
+*/
 /**
  * SSH工具类
  * @author 王建国
  * 2019-12-29
- */
+ *//*
+
 public class SSHHelper {
 
-    /**
+    */
+/**
      * 远程 执行命令并返回结果调用过程 是同步的（执行完才会返回）
      * @param host  主机名
      * @param user  用户名
@@ -23,7 +27,8 @@ public class SSHHelper {
      * @param port  端口
      * @param command   命令
      * @return
-     */
+     *//*
+
     public static String exec(String host,String user,String psw,int port,String command){
         String result="";
         Session session =null;
@@ -68,3 +73,4 @@ public class SSHHelper {
     }
 }
 
+*/

@@ -1,7 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03a541a2-4605-451d-a895-e7d9fb117791" name="Default Changelist" comment="shiro配置jar包" />
+    <list default="true" id="03a541a2-4605-451d-a895-e7d9fb117791" name="Default Changelist" comment="shiro配置jar包">
+      <change afterPath="$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/utils/DES.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/utils/EncryUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/DigestsUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/DigestsUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/DownloadUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/DownloadUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/EncodesUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/EncodesUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/Exceptions.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/Exceptions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/ExportExcelUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/ExportExcelUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/GeoTagMapBuilder$PhotoLocation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/GeoTagMapBuilder$PhotoLocation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/GeoTagMapBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/GeoTagMapBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/JSONDataUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/JSONDataUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/JsonFormatTool.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/JsonFormatTool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/MD5Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/MD5Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/PageUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/PageUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/ReadTifUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/ReadTifUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/ReadTiff.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/ReadTiff.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/SessionUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/SessionUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/TokenUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/TokenUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/UpdateDataJpaUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/UpdateDataJpaUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/ZIPUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-commons/target/classes/com/ghkj/gaqcommons/untils/ZIPUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-commons/target/gaq-commons-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-commons/target/gaq-commons-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-dao/target/classes/com/ghkj/gaqdao/utils/RedisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-dao/target/classes/com/ghkj/gaqdao/utils/RedisConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-dao/target/classes/com/ghkj/gaqdao/utils/RedisUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-dao/target/classes/com/ghkj/gaqdao/utils/RedisUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-dao/target/gaq-dao-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-dao/target/gaq-dao-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-entity/target/classes/com/ghkj/gaqentity/AdminPermission.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-entity/target/classes/com/ghkj/gaqentity/AdminPermission.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-entity/target/classes/com/ghkj/gaqentity/AdminRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-entity/target/classes/com/ghkj/gaqentity/AdminRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-entity/target/classes/com/ghkj/gaqentity/AdminUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-entity/target/classes/com/ghkj/gaqentity/AdminUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-entity/target/classes/com/ghkj/gaqentity/GuoConfigureImage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-entity/target/classes/com/ghkj/gaqentity/Photo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-entity/target/gaq-entity-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-entity/target/gaq-entity-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-entity/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-entity/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-entity/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-entity/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-service/src/main/java/com/ghkj/gaqservice/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-service/src/main/java/com/ghkj/gaqservice/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-service/target/classes/com/ghkj/gaqservice/service/AdminUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-service/target/classes/com/ghkj/gaqservice/service/AdminUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-service/target/classes/com/ghkj/gaqservice/service/HjjService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-service/target/classes/com/ghkj/gaqservice/service/HjjService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-service/target/classes/com/ghkj/gaqservice/service/LoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-service/target/classes/com/ghkj/gaqservice/service/LoginService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-service/target/classes/com/ghkj/gaqservice/service/RoleAndPermissService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-service/target/classes/com/ghkj/gaqservice/service/RoleAndPermissService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-service/target/classes/com/ghkj/gaqservice/service/UploadImageServive.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-service/target/classes/com/ghkj/gaqservice/service/UploadImageServive.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-service/target/classes/com/ghkj/gaqservice/service/ZipDealService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-service/target/classes/com/ghkj/gaqservice/service/ZipDealService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-service/target/classes/com/ghkj/gaqservice/service/impl/AdminUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-service/target/classes/com/ghkj/gaqservice/service/impl/AdminUserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-service/target/classes/com/ghkj/gaqservice/service/impl/HjjServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-service/target/classes/com/ghkj/gaqservice/service/impl/HjjServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-service/target/classes/com/ghkj/gaqservice/service/impl/LoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-service/target/classes/com/ghkj/gaqservice/service/impl/LoginServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-service/target/classes/com/ghkj/gaqservice/service/impl/RoleAndPermissServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-service/target/classes/com/ghkj/gaqservice/service/impl/RoleAndPermissServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-service/target/classes/com/ghkj/gaqservice/service/impl/UploadImageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-service/target/classes/com/ghkj/gaqservice/service/impl/UploadImageServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-service/target/classes/com/ghkj/gaqservice/service/impl/ZipDealServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-service/target/classes/com/ghkj/gaqservice/service/impl/ZipDealServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-service/target/gaq-service-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-service/target/gaq-service-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/GaqWebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/GaqWebApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/config/MyShiroRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/config/MyShiroRealm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/controller/HellowordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/controller/HellowordController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/untils/SSHHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/untils/SSHHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-web/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-web/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-web/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-web/target/classes/com/ghkj/gaqweb/GaqWebApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-web/target/classes/com/ghkj/gaqweb/GaqWebApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-web/target/classes/com/ghkj/gaqweb/config/MyShiroRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-web/target/classes/com/ghkj/gaqweb/config/MyShiroRealm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-web/target/classes/com/ghkj/gaqweb/config/ShiroConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-web/target/classes/com/ghkj/gaqweb/config/ShiroConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-web/target/classes/com/ghkj/gaqweb/config/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-web/target/classes/com/ghkj/gaqweb/config/WebMvcConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-web/target/classes/com/ghkj/gaqweb/controller/HellowordController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-web/target/classes/com/ghkj/gaqweb/controller/HellowordController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-web/target/classes/com/ghkj/gaqweb/controller/HjjController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-web/target/classes/com/ghkj/gaqweb/controller/HjjController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-web/target/classes/com/ghkj/gaqweb/controller/LocationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-web/target/classes/com/ghkj/gaqweb/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-web/target/classes/com/ghkj/gaqweb/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-web/target/classes/com/ghkj/gaqweb/controller/UploadImageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-web/target/classes/com/ghkj/gaqweb/controller/UploadImageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-web/target/classes/com/ghkj/gaqweb/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-web/target/classes/com/ghkj/gaqweb/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-web/target/classes/com/ghkj/gaqweb/controller/ZipDealController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-web/target/classes/com/ghkj/gaqweb/controller/ZipDealController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-web/target/classes/com/ghkj/gaqweb/filter/CorsFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-web/target/classes/com/ghkj/gaqweb/filter/CorsFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-web/target/classes/com/ghkj/gaqweb/untils/EsUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-web/target/classes/com/ghkj/gaqweb/untils/EsUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-web/target/classes/com/ghkj/gaqweb/untils/SSHHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-web/target/classes/generator/generatorConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-web/target/classes/liquibase/change_log/testbasesql.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-web/target/classes/liquibase/master.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-web/target/gaq-web-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-web/target/gaq-web-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-web/target/gaq-web-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-web/target/gaq-web-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gaq-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../gaq-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/gaq-entity/target/" />
@@ -44,8 +121,43 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/controller/HellowordController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+            <state relative-caret-position="27">
+              <caret line="76" column="43" lean-forward="true" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#677#678#0" expanded="true" />
+                <element signature="e#706#707#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="59" column="44" lean-forward="true" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/utils/DES.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="621">
+              <caret line="116" column="38" lean-forward="true" selection-start-line="116" selection-start-column="38" selection-end-line="116" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/utils/EncryUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="71" column="20" lean-forward="true" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,6 +194,7 @@
       <find>selectByPrimaryKey</find>
       <find>updateByPrimaryKeySelective</find>
       <find>alibaba</find>
+      <find>encrypt</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -100,11 +213,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../gaq-commons/src/main/java/com/ghkj/gaqcommons/untils/DateTimeUtil.java" />
-        <option value="$PROJECT_DIR$/../gaq-commons/src/main/java/com/ghkj/gaqcommons/untils/TokenUtils.java" />
-        <option value="$PROJECT_DIR$/../gaq-commons/src/main/java/com/ghkj/gaqcommons/untils/ZipUtil.java" />
-        <option value="$PROJECT_DIR$/../gaq-commons/src/main/java/com/ghkj/gaqcommons/untils/JSONDataUtil.java" />
-        <option value="$PROJECT_DIR$/../gaq-commons/src/main/java/com/ghkj/gaqcommons/untils/PageUtil.java" />
         <option value="$PROJECT_DIR$/../gaq-commons/src/main/java/com/ghkj/gaqcommons/untils/ExportExcelUtil.java" />
         <option value="$PROJECT_DIR$/../gaq-commons/src/main/java/com/ghkj/gaqcommons/untils/JsonFormatTool.java" />
         <option value="$PROJECT_DIR$/../gaq-commons/src/main/java/com/ghkj/gaqcommons/untils/ZIPUtil.java" />
@@ -120,7 +228,6 @@
         <option value="$PROJECT_DIR$/../gaq-commons/src/main/java/com/ghkj/gaqcommons/untils/GeoTagMapBuilder.java" />
         <option value="$PROJECT_DIR$/../gaq-commons/src/main/java/com/ghkj/gaqcommons/untils/ReadTifUtil.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/../gaq-commons/pom.xml" />
         <option value="$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/controller/GDALTestEnvironment.java" />
         <option value="$PROJECT_DIR$/../gaq-commons/src/main/java/com/ghkj/gaqcommons/untils/ReadTiff.java" />
         <option value="$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/config/ShiroConfig.java" />
@@ -132,7 +239,6 @@
         <option value="$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/../gaq-service/src/main/java/com/ghkj/gaqservice/service/impl/AdminUserServiceImpl.java" />
         <option value="$PROJECT_DIR$/../gaq-entity/src/main/java/com/ghkj/gaqentity/Eat.java" />
-        <option value="$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/GaqWebApplication.java" />
         <option value="$PROJECT_DIR$/../gaq-dao/src/main/resources/xml/EatMapper.xml" />
         <option value="$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/mapper/EatMapper.java" />
         <option value="$PROJECT_DIR$/../gaq-dao/src/main/resources/xml/AdminPermissionMapper.xml" />
@@ -147,9 +253,16 @@
         <option value="$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/mapper/ConfigureImageMapper.java" />
         <option value="$PROJECT_DIR$/../gaq-dao/src/main/resources/xml/AdminRoleMapper.xml" />
         <option value="$PROJECT_DIR$/../gaq-dao/src/main/resources/xml/ConfigureImageMapper.xml" />
-        <option value="$PROJECT_DIR$/../gaq-web/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/../gaq-web/pom.xml" />
+        <option value="$PROJECT_DIR$/../gaq-service/src/main/java/com/ghkj/gaqservice/service/impl/LoginServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/untils/SSHHelper.java" />
+        <option value="$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/config/MyShiroRealm.java" />
+        <option value="$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/GaqWebApplication.java" />
+        <option value="$PROJECT_DIR$/../gaq-commons/pom.xml" />
         <option value="$PROJECT_DIR$/../gaq-web/src/main/resources/generator/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/../gaq-web/pom.xml" />
+        <option value="$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/utils/EncryUtil.java" />
+        <option value="$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/utils/DES.java" />
+        <option value="$PROJECT_DIR$/../gaq-web/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/controller/HellowordController.java" />
       </list>
     </option>
@@ -174,7 +287,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="593" />
     <option name="width" value="775" />
     <option name="height" value="735" />
@@ -185,8 +298,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -198,15 +311,15 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1583835810220" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586418858559" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="last_opened_file_path" value="G:/demo/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.56653225" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -234,7 +347,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GaqWebApplication">
+  <component name="RunManager" selected="Application.HellowordController">
     <configuration name="GDALTestEnvironment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ghkj.gaqweb.controller.GDALTestEnvironment" />
       <module name="gaq-web" />
@@ -430,6 +543,15 @@
       <workItem from="1583825921358" duration="7792000" />
       <workItem from="1583834229719" duration="1626000" />
       <workItem from="1583903401448" duration="249000" />
+      <workItem from="1583904270990" duration="2786000" />
+      <workItem from="1584926277593" duration="371000" />
+      <workItem from="1585636818032" duration="5130000" />
+      <workItem from="1585703311595" duration="18044000" />
+      <workItem from="1585789777759" duration="6638000" />
+      <workItem from="1585880426737" duration="599000" />
+      <workItem from="1586144033854" duration="2975000" />
+      <workItem from="1586308614994" duration="4300000" />
+      <workItem from="1586396331939" duration="5513000" />
     </task>
     <task id="LOCAL-00001" summary="练习项目">
       <created>1571216254788</created>
@@ -463,7 +585,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="593117000" />
+    <option name="totallyTimeSpent" value="639473000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -477,7 +599,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24054463" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25037822" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -488,16 +610,16 @@
       <window_info id="Persistence" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3967213" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.38032788" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39508197" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40163934" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.3295082" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.49016392" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.452459" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.38196722" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32786885" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.3295082" />
@@ -505,7 +627,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.19364598" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.083207265" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" weight="0.04765507" />
@@ -514,7 +636,7 @@
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.32980332" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2677761" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25037822" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -525,16 +647,16 @@
       <window_info id="Persistence" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3967213" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.38032788" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39508197" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40163934" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.3295082" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.49016392" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.452459" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.38196722" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32786885" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.3295082" />
@@ -542,7 +664,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.19364598" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.083207265" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" weight="0.04765507" />
@@ -555,6 +677,9 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
     <MESSAGE value="练习项目" />
     <MESSAGE value="生成实体" />
     <MESSAGE value="实体" />
@@ -567,106 +692,6 @@
     <state width="334" height="318" key="Git.Branch.Popup@1366.768" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="3798" column="30" selection-start-line="3798" selection-start-column="30" selection-end-line="3798" selection-end-column="30" />
-          <folding>
-            <element signature="e#177013#177014#0" expanded="true" />
-            <element signature="e#177054#177055#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/Collections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="139" column="57" selection-start-line="139" selection-start-column="57" selection-end-line="139" selection-end-column="57" />
-          <folding>
-            <element signature="e#5644#5645#0" expanded="true" />
-            <element signature="e#5675#5676#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gaq-entity/src/main/java/com/ghkj/gaqentity/GeoCoordinate.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="196" column="59" selection-start-line="196" selection-start-column="59" selection-end-line="196" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.9.RELEASE/spring-web-5.1.9.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="31" column="94" selection-start-line="31" selection-start-column="94" selection-end-line="31" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/utils/RedisUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/utils/RedisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/resources/liquibase/change_log/testbasesql.xml" />
-    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/resources/liquibase/master.xml" />
-    <entry file="file://$PROJECT_DIR$/../gaq-dao/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="61" column="48" lean-forward="true" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gaq-entity/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108">
-          <caret line="26" column="56" lean-forward="true" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gaq-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1020">
-          <caret line="6" column="43" lean-forward="true" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/resources/mybatis-generator/mybatisGeneratorinit.properties" />
-    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqdao/mapper/EatMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqdao/mapper/EatMapper.java" />
-    <entry file="file://$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/mapper/EatMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/../gaq-entity/com/ghkj/gaqentity/Eat.java" />
-    <entry file="file://$PROJECT_DIR$/../gaq-service/src/main/java/com/ghkj/gaqservice/service/impl/UploadImageServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-291">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gaq-service/src/main/java/com/ghkj/gaqservice/service/impl/LoginServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="50" column="48" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gaq-service/src/main/java/com/ghkj/gaqservice/service/impl/HjjServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="112" column="76" selection-start-line="112" selection-start-column="63" selection-end-line="112" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../gaq-service/src/main/java/com/ghkj/gaqservice/service/impl/ZipDealServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -681,40 +706,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/config/ShiroConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="132" column="7" selection-start-line="132" selection-start-column="7" selection-end-line="132" selection-end-column="7" />
-          <folding>
-            <element signature="e#1303#1319#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gaq-commons/src/main/java/com/ghkj/gaqcommons/untils/MyMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="30" column="16" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/tk/mybatis/mapper/3.5.3/mapper-3.5.3.jar!/tk/mybatis/mapper/common/base/select/SelectByPrimaryKeyMapper.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/controller/HjjController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-          <folding>
-            <element signature="e#3073#3074#0" expanded="true" />
-            <element signature="e#3128#3129#0" expanded="true" />
-            <element signature="e#3489#3490#0" expanded="true" />
-            <element signature="e#3538#3539#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -830,13 +825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gaq-entity/src/main/java/com/ghkj/gaqentity/AdminUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-304">
-          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../gaq-entity/src/main/java/com/ghkj/gaqentity/ConfigureImage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-223">
@@ -844,23 +832,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/GaqWebApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="61" lean-forward="true" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-507">
-          <caret line="36" column="42" lean-forward="true" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -872,36 +843,223 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/../gaq-entity/src/main/java/com/ghkj/gaqentity/AdminUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1356">
-          <caret line="132" column="22" lean-forward="true" selection-start-line="132" selection-start-column="22" selection-end-line="132" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gaq-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="192" column="92" lean-forward="true" selection-start-line="192" selection-start-column="92" selection-end-line="192" selection-end-column="92" />
+        <state relative-caret-position="351">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="19" />
           <folding>
-            <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/resources/generator/generatorConfig.xml">
+    <entry file="file://$PROJECT_DIR$/../gaq-service/src/main/java/com/ghkj/gaqservice/service/impl/LoginServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="50" column="69" lean-forward="true" selection-start-line="50" selection-start-column="69" selection-end-line="50" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/config/Myconfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-215">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/config/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1081">
+          <caret line="132" column="7" selection-start-line="132" selection-start-column="7" selection-end-line="132" selection-end-column="7" />
+          <folding>
+            <element signature="e#1303#1319#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-593">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/config/WebMvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-134">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/controller/LocationController.java" />
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/controller/HjjController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3738">
+          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <folding>
+            <element signature="e#3073#3074#0" expanded="true" />
+            <element signature="e#3128#3129#0" expanded="true" />
+            <element signature="e#3489#3490#0" expanded="true" />
+            <element signature="e#3538#3539#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/controller/UploadImageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2024">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/untils/SSHHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1646">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/untils/EsUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-593">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/filter/CorsFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-458">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/controller/ZipDealController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-32">
+          <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/GaqWebApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/config/MyShiroRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108">
+          <caret line="48" column="27" lean-forward="true" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/resources/generator/generatorConfig.xml" />
+    <entry file="file://$PROJECT_DIR$/../gaq-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2181">
+          <caret line="67" column="48" lean-forward="true" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-commons/src/main/java/com/ghkj/gaqcommons/untils/MyMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-commons/src/main/java/com/ghkj/gaqcommons/untils/DateTimeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-commons/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1236">
+          <caret line="38" column="21" lean-forward="true" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-dao/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1080">
+          <caret line="8" column="58" lean-forward="true" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-entity/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108">
+          <caret line="26" column="56" lean-forward="true" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3699">
+          <caret line="137" column="62" lean-forward="true" selection-start-line="137" selection-start-column="62" selection-end-line="137" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1020">
+          <caret line="6" column="43" lean-forward="true" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/utils/DES.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
-          <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <caret line="116" column="38" lean-forward="true" selection-start-line="116" selection-start-column="38" selection-end-line="116" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="59" column="44" lean-forward="true" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gaq-dao/src/main/java/com/ghkj/gaqdao/utils/EncryUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="71" column="20" lean-forward="true" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../gaq-web/src/main/java/com/ghkj/gaqweb/controller/HellowordController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+        <state relative-caret-position="27">
+          <caret line="76" column="43" lean-forward="true" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import tk.mybatis.spring.annotation.MapperScan;
 
 
+
 @SpringBootApplication(scanBasePackages = {"com.ghkj"})
 @MapperScan("com.ghkj.gaqdao.mapper")
 public class GaqWebApplication {

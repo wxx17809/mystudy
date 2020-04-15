@@ -36,10 +36,10 @@ mybatis:
   mapper-locations: classpath:xml/*.xml
   type-aliases-package: com.ghkj.gaqentity
 
-mapper:
-  mappers: com.ghkj.gaqcommons.untils.MyMapper
-  not-empty: false
-  identity: MYSQL
+#mapper:
+#  mappers: com.ghkj.gaqcommons.untils.MyMapper
+#  not-empty: false
+#  identity: MYSQL
 
 # pageHelper分页配置
 pagehelper:
@@ -56,6 +56,8 @@ logging:
 
 matchAllNum: 10000
 uploadImages: /home/images/
+
+key: 6c9414166ca7c922eea3ff8f8bba22faa137f2e
 
 
 

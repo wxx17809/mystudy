@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ghkj.gaqdao.mapper.AdminPermissionMapper">
+  <resultMap id="BaseResultMap" type="com.ghkj.gaqentity.AdminPermission">
+    <id column="PERMISSION_ID" jdbcType="INTEGER" property="permissionId" />
+    <result column="PERMISSION_NAME" jdbcType="VARCHAR" property="permissionName" />
+    <result column="PERMISSION_URL" jdbcType="VARCHAR" property="permissionUrl" />
+    <result column="PARENT_ID" jdbcType="INTEGER" property="parentId" />
+    <result column="PERMISSION_CODE" jdbcType="VARCHAR" property="permissionCode" />
+    <result column="PERMISSION_INDEX" jdbcType="INTEGER" property="permissionIndex" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    PERMISSION_ID, PERMISSION_NAME, PERMISSION_URL, PARENT_ID, PERMISSION_CODE, PERMISSION_INDEX
+  </sql>
+
+</mapper>
