@@ -4,7 +4,6 @@ import com.ghkj.gaqdao.utils.EncryUtil;
 import io.swagger.annotations.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import java.text.DateFormat;
@@ -24,9 +23,6 @@ import java.util.Date;
 public class HellowordController {
 
     private static final Logger logger = LoggerFactory.getLogger(HellowordController.class);
-
-    @Value("${Key}")
-    private String Key;//读取config文件中的key值
 
     @GetMapping("/hello")
     public String hello(){

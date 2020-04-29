@@ -56,8 +56,12 @@ logging:
 
 matchAllNum: 10000
 uploadImages: /home/images/
+upload:
+  #localtion: ${UPLOAD_DIR:/home/data/test}
+  localtion: D://test//
+  maxFileSize: 100MB
+  maxRequestSize: 1000MB
 
-key: 6c9414166ca7c922eea3ff8f8bba22faa137f2e
 
 
 
