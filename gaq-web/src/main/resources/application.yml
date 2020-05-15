@@ -1,8 +1,14 @@
 server:
   port: 8080
 #-----------------------------------ES数据库配置----------------------------------------
-elasticIp: 192.168.1.17
-elasticUserPassword: elastic:123456
+elasticsearch:
+  rest:
+    username: elastic
+    password: 654321
+    url: 106.13.229.155:9200
+
+elasticUserPassword: elastic:654321
+elasticIp: 106.13.229.155
 #------------------------------------redis配置、Mysql配置---------------------------------------
 spring:
   servlet:

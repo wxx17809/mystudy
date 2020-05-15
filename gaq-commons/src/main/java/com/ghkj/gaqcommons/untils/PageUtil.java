@@ -1,5 +1,6 @@
 package com.ghkj.gaqcommons.untils;
 
+import org.apache.lucene.search.TotalHits;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;
@@ -28,22 +29,23 @@ public class PageUtil {
     /**
      * 方法描述:查询Es数据库的内容并带分页
      * @return map
-     * 作者： 陈彦名
+     * 作者： 吴璇璇
      * 创建时间： 2019-4-20 10:30
      */
     public static Map<String, Object> pageEs(SearchResponse response,int pageIndex,int pageSize){
         Map<String,Object> map=new HashMap<>();
         List<Map> tarsysList =new ArrayList<>();
-        SearchHits searchHits = response.getHits();
-        for (SearchHit hit:searchHits){
+        SearchHit[] hits = response.getHits().getHits();
+        long total=response.getHits().getTotalHits().value;
+        for (SearchHit hit:hits){
             Map<String,Object> mapValue = hit.getSourceAsMap();
             mapValue.put("id",hit.getId());
             tarsysList.add(mapValue);
         }
         map.put("list",tarsysList);
         map.put("pageIndex",pageIndex);
-        map.put("pageNum", getPageNum(pageSize,(int)response.getHits().totalHits));
-        map.put("number",response.getHits().totalHits);
+        map.put("pageNum", getPageNum(pageSize,(int)total));
+        map.put("totalNum",total);
         return map;
     }
 }

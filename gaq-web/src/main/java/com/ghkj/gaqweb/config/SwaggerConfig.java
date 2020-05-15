@@ -6,10 +6,15 @@ import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
+import springfox.documentation.service.ApiKey;
 import springfox.documentation.service.Contact;
+import springfox.documentation.service.SecurityScheme;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
+import static com.google.common.collect.Lists.newArrayList;
+
 
 /**
  * @version 1.0
@@ -23,6 +28,11 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class SwaggerConfig {
 
     @Bean
+    SecurityScheme apiKey(){
+        return new ApiKey("token","token","header");
+    }
+
+    @Bean
     public Docket createRestApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
@@ -30,7 +40,8 @@ public class SwaggerConfig {
                 //需要扫描生成swagger文档接口的包路径，注意别写错了，错了swagger页面打开就不会有接口再上面
                 .apis(RequestHandlerSelectors.basePackage("com.ghkj.gaqweb.controller"))
                 .paths(PathSelectors.any())
-                .build();
+                .build()
+                .securitySchemes(newArrayList(apiKey()));
     }
 
     //api文档的一些页面基本信息

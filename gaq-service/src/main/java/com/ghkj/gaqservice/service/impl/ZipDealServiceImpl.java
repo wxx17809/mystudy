@@ -8,6 +8,7 @@ import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.action.search.SearchRequestBuilder;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.action.update.UpdateResponse;
+import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.common.xcontent.XContentBuilder;
 import org.elasticsearch.common.xcontent.XContentFactory;
@@ -53,8 +54,6 @@ import sun.misc.BASE64Encoder;
 @Service
 public class ZipDealServiceImpl implements ZipDealService {
     private static final Logger logger = LoggerFactory.getLogger(ZipDealServiceImpl.class);
-    @Autowired
-    private TransportClient client;
 
     @Value("${matchAllNum}")
     int matchAllNum;

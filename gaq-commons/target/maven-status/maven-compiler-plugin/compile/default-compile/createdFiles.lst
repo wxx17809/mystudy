@@ -6,7 +6,6 @@ com\ghkj\gaqcommons\untils\PermssUtil.class
 com\ghkj\gaqcommons\untils\ZIPUtil.class
 com\ghkj\gaqcommons\untils\EncodesUtil.class
 com\ghkj\gaqcommons\untils\PageUtil.class
-com\ghkj\gaqcommons\untils\ReadTifUtil.class
 com\ghkj\gaqcommons\untils\GeoTagMapBuilder$PhotoLocation.class
 com\ghkj\gaqcommons\untils\GeoTagMapBuilder.class
 com\ghkj\gaqcommons\untils\UpdateDataJpaUtil.class
@@ -14,6 +13,7 @@ com\ghkj\gaqcommons\untils\MD5Utils.class
 com\ghkj\gaqcommons\untils\TokenUtils.class
 com\ghkj\gaqcommons\untils\DateTimeUtil.class
 com\ghkj\gaqcommons\untils\ExportExcelUtil.class
+com\ghkj\gaqcommons\untils\EsBaseUtil.class
 com\ghkj\gaqcommons\untils\JsonFormatTool.class
 com\ghkj\gaqcommons\untils\Exceptions.class
 com\ghkj\gaqcommons\untils\DownloadUtils.class

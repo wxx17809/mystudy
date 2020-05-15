@@ -25,6 +25,7 @@ import java.util.Map;
  */
 @Api(description = "目标操作")
 @RestController
+@RequestMapping("/hello")
 public class HjjController {
 
     private static  final Logger logger= LoggerFactory.getLogger(HjjController.class);
@@ -35,6 +36,8 @@ public class HjjController {
     private String elasticIp;
     @Autowired
     private HjjService hjjService;
+
+
 
     /**查询、新增、修改 都可以用POST请求，查询term里是Es语句，新增和修改term是json格式数据。删除用DElete请求，term是空
      * 查询传参数
@@ -115,7 +118,7 @@ public class HjjController {
      * @return
      */
     @PostMapping("/addOrUpdateHjj")
-    public Map<String,Object> addOrUpdateHjj(@RequestBody JSONObject hjj){
+    public Map<String,Object> addOrUpdateHjj(@RequestBody JSONObject hjj)throws Exception{
           return hjjService.addOrUpdateHjj(hjj);
     }
 
@@ -151,17 +154,7 @@ public class HjjController {
     }
 
 
-    /**
-     * 按照时间范围查询、terms多条件查询
-     * @param hjjParams
-     * @return
-     */
-    @PostMapping("/findDataTask")
-    public Map<String,Object> findDataTask(@RequestBody JSONObject hjjParams){
-        Map result=hjjService.findDataTask(hjjParams);
-        return result;
 
-    }
 
 
 

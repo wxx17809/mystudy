@@ -3,6 +3,7 @@ package com.ghkj.gaqservice.service.impl;
 import com.ghkj.gaqcommons.untils.DateTimeUtil;
 import com.ghkj.gaqcommons.untils.SessionUtil;
 import com.ghkj.gaqcommons.untils.TokenUtils;
+import com.ghkj.gaqdao.utils.RedisUtil;
 import com.ghkj.gaqentity.AdminUser;
 import com.ghkj.gaqservice.service.AdminUserService;
 import com.ghkj.gaqservice.service.LoginService;
@@ -50,6 +51,7 @@ public class LoginServiceImpl implements LoginService {
             AdminUser adminUser=adminUserService.findByUserName(userName);
             String tokens = TokenTest(adminUser.getId().longValue());
             dataMap.put("token",tokens);
+            RedisUtil.set("token",tokens,86400);
             SessionUtil.setAdminUser(adminUser);
         } catch (UnknownAccountException e) {
             dataMap.put("success", false);

@@ -21,20 +21,6 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
     </properties>
-    <repositories>
-        <!-- add the elasticsearch repo -->
-        <repository>
-            <id>elasticsearch-releases</id>
-            <url>https://artifacts.elastic.co/maven</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-
 
     <dependencies>
         <dependency>
@@ -96,39 +82,6 @@
         </dependency>
         <!-- 集成mysql结束-->
 
-        <!--连接elasticsearch数据库需要的jar包开始-->
-        <dependency>
-            <groupId>org.bouncycastle</groupId>
-            <artifactId>bcprov-jdk14</artifactId>
-            <version>1.38</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.unboundid</groupId>
-            <artifactId>unboundid-ldapsdk</artifactId>
-            <version>1.1.2</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15on -->
-        <dependency>
-            <groupId>org.bouncycastle</groupId>
-            <artifactId>bcprov-jdk15on</artifactId>
-            <version>1.56</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.elasticsearch.plugin</groupId>
-            <artifactId>x-pack-api</artifactId>
-            <version>6.2.4</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.elasticsearch.client</groupId>
-            <artifactId>x-pack-transport</artifactId>
-            <version>6.2.4</version>
-        </dependency>
-        <!--连接elasticsearch数据库需要的jar包开始-->
-
         <!-- https://mvnrepository.com/artifact/net.sf.json-lib/json-lib -->
         <dependency>
             <groupId>net.sf.json-lib</groupId>
@@ -161,6 +114,7 @@
                     <!-- 指定该Main Class为全局的唯一入口 -->
                     <mainClass>com.ghkj.gaqweb.GaqWebApplication</mainClass>
                     <layout>ZIP</layout>
+                   <!-- <includeSystemScope>true</includeSystemScope>-->
                 </configuration>
                 <executions>
                     <execution>

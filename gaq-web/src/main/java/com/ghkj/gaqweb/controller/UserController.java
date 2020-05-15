@@ -1,5 +1,7 @@
 package com.ghkj.gaqweb.controller;
 import com.alibaba.fastjson.JSONObject;
+import com.ghkj.gaqcommons.untils.TokenUtils;
+import com.ghkj.gaqdao.utils.RedisUtil;
 import com.ghkj.gaqentity.AdminUser;
 import com.ghkj.gaqservice.service.AdminUserService;
 import io.swagger.annotations.*;
@@ -7,6 +9,7 @@ import org.slf4j.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.Map;
 
 
@@ -34,11 +37,16 @@ public class UserController {
     @ApiOperation("查询全部用户接口")
     @PostMapping("/findUserList")
     @ApiImplicitParams({@ApiImplicitParam(name = "page", value = "当前页数",required = true),
-            @ApiImplicitParam(name = "size", value = "每页条数",required = true)}
-    )
+            @ApiImplicitParam(name = "size", value = "每页条数",required = true),
+            })
     public Map<String,Object> findUserList(Integer page,Integer size){
         logger.info("进入查询全部用户的方法===page=="+page+"size===="+size);
-        Map<String,Object> map=adminUserService.selectAll(page,size);
+        Map<String,Object> map=new HashMap<>();
+        String token= RedisUtil.getObject("token").toString();
+        int result=TokenUtils.ValidToken(token);
+        if(result==0){
+            map=adminUserService.selectAll(page,size);
+        }
         logger.info("离开查询全部用户的方法");
         return map;
     }

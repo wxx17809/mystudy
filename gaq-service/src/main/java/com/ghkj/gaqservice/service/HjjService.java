@@ -16,7 +16,7 @@ public interface HjjService {
      * @param hjj
      * @return
      */
-    Map<String, Object> addOrUpdateHjj(JSONObject hjj);
+    Map<String, Object> addOrUpdateHjj(JSONObject hjj)throws Exception;
 
     /**
      * 删除目标
@@ -39,10 +39,4 @@ public interface HjjService {
      */
     Map findHjjList(JSONObject hjjParams);
 
-    /**
-     * 过滤，terms 查询
-     * @param hjjParams
-     * @return
-     */
-    Map findDataTask(JSONObject hjjParams);
 }
