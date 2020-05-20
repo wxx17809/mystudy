@@ -51,7 +51,7 @@ public class LoginServiceImpl implements LoginService {
             AdminUser adminUser=adminUserService.findByUserName(userName);
             String tokens = TokenTest(adminUser.getId().longValue());
             dataMap.put("token",tokens);
-            RedisUtil.set("token",tokens,86400);
+            RedisUtil.set("token",tokens,600000);
             SessionUtil.setAdminUser(adminUser);
         } catch (UnknownAccountException e) {
             dataMap.put("success", false);
