@@ -67,7 +67,7 @@ public class AdminUserServiceImpl implements AdminUserService {
             jbbsUser.setPassword(password);
             result = userMapper.updateByPrimaryKeySelective(jbbsUser);
             if(result > 0){
-                String key = "user_" + jbbsUser.getId();
+                String key = "login_" + jbbsUser.getId();
                 boolean haskey = RedisUtil.hasKey(key);
                 if (haskey) {
                     RedisUtil.del(key);

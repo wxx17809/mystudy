@@ -1,8 +1,8 @@
 package com.ghkj.gaqservice.service.impl;
 
 import com.ghkj.gaqcommons.untils.DateTimeUtil;
+import com.ghkj.gaqcommons.untils.JwtTokenManager;
 import com.ghkj.gaqcommons.untils.SessionUtil;
-import com.ghkj.gaqcommons.untils.TokenUtils;
 import com.ghkj.gaqdao.utils.RedisUtil;
 import com.ghkj.gaqentity.AdminUser;
 import com.ghkj.gaqservice.service.AdminUserService;
@@ -12,6 +12,7 @@ import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
@@ -29,6 +30,11 @@ public class LoginServiceImpl implements LoginService {
 
     @Autowired
     private AdminUserService adminUserService;
+
+    @Autowired
+    private JwtTokenManager jwtTokenManager;
+    @Value("${jwt.expiration}")
+    private Long expiration;
 
     @Override
     public Map<String, Object> login(String userName, String password) {
@@ -49,10 +55,10 @@ public class LoginServiceImpl implements LoginService {
             dataMap.put("success",true);
             dataMap.put("msg","登录成功");
             AdminUser adminUser=adminUserService.findByUserName(userName);
-            String tokens = TokenTest(adminUser.getId().longValue());
-            dataMap.put("token",tokens);
-            RedisUtil.set("token",tokens,600000);
-            SessionUtil.setAdminUser(adminUser);
+            String jwtToken =jwtTokenManager.generateToken(adminUser,expiration);
+            String key="login_"+String.valueOf(adminUser.getId());
+            dataMap.put("token",jwtToken);
+            RedisUtil.set(key,jwtToken,expiration);
         } catch (UnknownAccountException e) {
             dataMap.put("success", false);
             dataMap.put("msg", "用户不存在!");
@@ -67,29 +73,6 @@ public class LoginServiceImpl implements LoginService {
             dataMap.put("msg","登录失败，请联系管理员！");
         }
         return dataMap;
-    }
-
-
-    //生成token的业务逻辑
-    public static String TokenTest(Long id) {
-        //获取生成token
-        Map<String, Object> map = new HashMap<>();
-        //建立载荷，这些数据根据业务，自己定义。
-        map.put("uid", id);
-        //生成时间
-        map.put("sta", DateTimeUtil.NowTime());
-        //过期时间
-        map.put("exp", DateTimeUtil.expriredDate());
-        try {
-            String token = TokenUtils.creatToken(map);
-            System.out.println("token="+token);
-            return token;
-        } catch (JOSEException e) {
-            System.out.println("生成token失败");
-            e.printStackTrace();
-        }
-        return null;
-
     }
 
 }
