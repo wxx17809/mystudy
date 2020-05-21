@@ -1,0 +1,10 @@
+package ${package};
+import com.ghkj.gaqcommons.untils.MyMapper;
+${imports}
+/*
+* 
+* gen by beetlsql mapper
+*/
+public interface ${className} extends MyMapper<${entityClass}> {
+   
+}

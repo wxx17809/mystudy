@@ -1,0 +1,41 @@
+package ${package};
+
+import io.swagger.annotations.ApiModelProperty;
+${imports}
+/* 
+* ${comment}
+* gen by beetlsql
+*/
+public class ${className} ${!isEmpty(ext)?"extends "+ext} {
+	
+	<%for(attr in attrs){
+			if(!isEmpty(attr.comment)){%>
+	<%		}%>
+	@ApiModelProperty(value = "${attr.comment}")
+	private ${attr.type} ${attr.name} ;
+	<%}%>
+	
+	public ${className}() {
+	}
+	
+	<%for(attr in attrs){
+	if(!isEmpty(attr.comment)){%>
+	/**${attr.comment}
+	*@return 
+	*/
+	<%}%>
+	public ${attr.type} get${attr.methodName}(){
+		return  ${attr.name};
+	}
+	<%if(!isEmpty(attr.comment)){%>
+	/**${attr.comment}
+	*@param  ${attr.name}
+	*/
+	<%}%>
+	public void set${attr.methodName}(${attr.type} ${attr.name} ){
+		this.${attr.name} = ${attr.name};
+	}
+	
+	<%}%>
+
+}

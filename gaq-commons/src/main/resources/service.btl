@@ -1,0 +1,19 @@
+package ${package};
+
+${imports}
+import java.util.List;
+import java.util.Map;
+/*
+* 
+* gen by beetlsql
+*/
+public interface ${className} {
+    //增//改
+    Map<String,Object> insertOrUpdate(${entityClass} ${modelClassVar});
+    //删多个
+    Map<String,Object> delete(List<Integer> idList);
+    //查单个详情
+     Map<String,Object> get(Integer id);
+     //查询全部列表
+     Map<String,Object> selectAll(Integer page, Integer size);
+}
