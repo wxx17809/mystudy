@@ -4,8 +4,7 @@ package com.ghkj.gaqcommons.untils;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
-import com.auth0.jwt.exceptions.JWTVerificationException;
-import com.auth0.jwt.interfaces.DecodedJWT;
+
 import com.ghkj.gaqentity.AdminUser;
 import com.ghkj.gaqentity.TokenUser;
 import io.jsonwebtoken.Claims;
@@ -13,10 +12,9 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+
 import java.io.Serializable;
 import java.net.InetAddress;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -38,29 +36,31 @@ public class JwtTokenManager implements Serializable {
 
     /**
      * 生成token.
+     *
      * @return
      */
-    public String generateToken(AdminUser tokenUser, Long expirationSeconds)throws Exception {
-        expiration=expirationSeconds;
+    public String generateToken(AdminUser tokenUser, Long expirationSeconds) throws Exception {
+        expiration = expirationSeconds;
         Map<String, Object> claims = new HashMap<>();
         claims.put(CLAIM_KEY_USERNAME, tokenUser.getUsername());
         claims.put(CLAIM_KEY_USERID, String.valueOf(tokenUser.getId()));
         String ip = InetAddress.getLocalHost().getHostAddress();
         claims.put(CLAIM_KEY_LOGINIP, ip);
-        claims.put(CLAIM_KEY_CREATED, LocalDateTime.now().atZone(ZoneId.systemDefault()).toInstant().toEpochMilli());
+        claims.put(CLAIM_KEY_CREATED, DateTimeUtil.NowTime());
         return generateToken(claims);
     }
 
-    private  String generateToken(Map<String, Object> claims) {
+    private String generateToken(Map<String, Object> claims) {
         return Jwts.builder()
                 .setClaims(claims)
-                .setExpiration(generateExpirationDate())
+                .setExpiration(generateExpirationDate())//过期时间
                 .signWith(SignatureAlgorithm.HS512, secret)
                 .compact();
     }
 
     /**
      * 通过token 获取用户名.
+     *
      * @param token
      * @return
      */
@@ -75,7 +75,7 @@ public class JwtTokenManager implements Serializable {
         return username;
     }
 
-    public  Claims getClaimsFromToken(String token){
+    public Claims getClaimsFromToken(String token) {
         Claims claims;
         try {
             claims = Jwts.parser()
@@ -90,6 +90,7 @@ public class JwtTokenManager implements Serializable {
 
     /**
      * 生成token 时间 = 当前时间+ expiration（properties中配置的失效时间）
+     *
      * @return
      */
     private Date generateExpirationDate() {
@@ -98,6 +99,7 @@ public class JwtTokenManager implements Serializable {
 
     /**
      * 判断token 失效时间是否到了
+     *
      * @param token
      * @return
      */
@@ -108,6 +110,7 @@ public class JwtTokenManager implements Serializable {
 
     /**
      * 获取设置的token 失效时间.
+     *
      * @param token
      * @return
      */
@@ -128,14 +131,16 @@ public class JwtTokenManager implements Serializable {
         // 获取本地计算机名
         String name = InetAddress.getLocalHost().getHostName();
         //输出控制台
-        System.out.println("IP地址："+ip);
-        System.out.println("本地计算机名："+name);
+        System.out.println("IP地址：" + ip);
+        System.out.println("本地计算机名：" + name);
+        System.out.println("======" + DateTimeUtil.NowTime());
 
     }
 
     /**
      * Token失效校验.
-     * @param token token字符串
+     *
+     * @param token     token字符串
      * @param loginInfo 用户信息
      * @return
      */
@@ -143,8 +148,8 @@ public class JwtTokenManager implements Serializable {
         //1.校验签名是否正确
         //2.token是否过期
         //......
-        TokenUser tokenUser=getTokenUserFromToken(token);
-        Integer userId=tokenUser.getId();
+        TokenUser tokenUser = getTokenUserFromToken(token);
+        Integer userId = tokenUser.getId();
         return (
                 userId.equals(loginInfo.getId())
                         && !isTokenExpired(token));
@@ -152,37 +157,33 @@ public class JwtTokenManager implements Serializable {
 
     /**
      * 根据token获取信息
+     *
      * @param token
      * @return
      */
-    public TokenUser getTokenUserFromToken(String token){
-            final Claims claims=getClaimsFromToken(token);
-            Object id=claims.get(CLAIM_KEY_USERID);
-            Integer userId=Integer.valueOf((String)id);
-            TokenUser tokenUser=new TokenUser();
-            tokenUser.setLastIp((String)claims.get(CLAIM_KEY_LOGINIP));
-            tokenUser.setId(userId);
-            tokenUser.setUsername((String)claims.get(CLAIM_KEY_USERNAME));
-            tokenUser.setToken(token);
-            return tokenUser;
+    public TokenUser getTokenUserFromToken(String token) {
+        final Claims claims = getClaimsFromToken(token);
+        Object id = claims.get(CLAIM_KEY_USERID);
+        Integer userId = Integer.valueOf((String) id);
+        TokenUser tokenUser = new TokenUser();
+        tokenUser.setLastIp((String) claims.get(CLAIM_KEY_LOGINIP));
+        tokenUser.setId(userId);
+        tokenUser.setUsername((String) claims.get(CLAIM_KEY_USERNAME));
+        tokenUser.setToken(token);
+        return tokenUser;
     }
 
     //验证token
-    public  boolean verity(String token){
+    public boolean verity(String token) {
+        JWTVerifier jwtVerifier = JWT.require(Algorithm.HMAC256(secret)).build();
         try {
-            Algorithm algorithm = Algorithm.HMAC256(secret);
-            JWTVerifier verifier = JWT.require(algorithm).build();
-            DecodedJWT jwt = verifier.verify(token);
-            return true;
-        } catch (IllegalArgumentException e) {
-            return false;
-        } catch (JWTVerificationException e) {
+            jwtVerifier.verify(token);
+        } catch (Exception e) {
             return false;
         }
+        return true;
 
     }
-
-
 
 
 }

@@ -83,5 +83,12 @@
             <artifactId>java-jwt</artifactId>
             <version>3.5.0</version>
         </dependency>
+        <!--fastdfs-->
+        <!-- https://mvnrepository.com/artifact/org.csource/fastdfs-client-java -->
+        <dependency>
+            <groupId>com.github.tobato</groupId>
+            <artifactId>fastdfs-client</artifactId>
+            <version>1.26.2</version>
+        </dependency>
     </dependencies>
 </project>

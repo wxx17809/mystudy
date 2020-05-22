@@ -71,6 +71,10 @@ upload:
   maxFileSize: 100MB
   maxRequestSize: 1000MB
 
+jwt:
+  secret: wuxuanxuan
+  #expiration: 86400 #过期的时间是1天（秒）
+  expiration: 3600 #过期的时间是1天（秒）
 
 
 

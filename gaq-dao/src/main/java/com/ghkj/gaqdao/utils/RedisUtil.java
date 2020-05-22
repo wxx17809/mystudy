@@ -163,7 +163,8 @@ public class RedisUtil {
     public static boolean set(String key, Object value, long time) {
         try {
             if (time > 0) {
-                redisUtil.redisTemplate.opsForValue().set(key, value, time, TimeUnit.SECONDS);
+                //redisUtil.redisTemplate.opsForValue().set(key, value, time, TimeUnit.SECONDS);
+                redisUtil.redisTemplate.boundValueOps(key).set(value,time,TimeUnit.SECONDS);
             } else {
                 setObject(key, value);
             }
