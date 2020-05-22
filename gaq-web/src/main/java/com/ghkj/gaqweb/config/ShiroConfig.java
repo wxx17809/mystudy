@@ -27,7 +27,7 @@ import java.util.Properties;
 @Configuration
 public class ShiroConfig {
     @Bean
-    public ShiroFilterFactoryBean shirFilter(SecurityManager securityManager) {
+    public ShiroFilterFactoryBean shiroFilter(SecurityManager securityManager) {
         System.out.println("ShiroConfiguration.shirFilter()");
         ShiroFilterFactoryBean shiroFilterFactoryBean = new ShiroFilterFactoryBean();
         shiroFilterFactoryBean.setSecurityManager(securityManager);
@@ -42,7 +42,7 @@ public class ShiroConfig {
         filterChainDefinitionMap.put("/html/**", "anon");
         //登录
         filterChainDefinitionMap.put("/login/**", "anon");
-        filterChainDefinitionMap.put("/hello/**", "anon");
+        //filterChainDefinitionMap.put("/configureImage/**", "anon");
         filterChainDefinitionMap.put("/swagger-ui.html", "anon");
         filterChainDefinitionMap.put("/swagger-resources", "anon");
         filterChainDefinitionMap.put("/v2/api-docs", "anon");
@@ -80,6 +80,7 @@ public class ShiroConfig {
     }
 
 
+    //将自己的验证方式加入容器
     @Bean
     public MyShiroRealm myShiroRealm() {
         MyShiroRealm myShiroRealm = new MyShiroRealm();
@@ -88,6 +89,7 @@ public class ShiroConfig {
     }
 
 
+    //权限管理，配置主要是Realm的管理认证
     @Bean
     public SecurityManager securityManager() {
         DefaultWebSecurityManager securityManager = new DefaultWebSecurityManager();
