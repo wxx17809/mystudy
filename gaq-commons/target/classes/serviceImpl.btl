@@ -1,0 +1,89 @@
+package ${package};
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import com.ghkj.gaqcommons.untils.JSONDataUtil;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.stereotype.Service;
+import ${daoPackage}.${entityClass}Mapper;
+import org.springframework.transaction.annotation.Transactional;
+${imports}
+${importsService}
+import java.util.Collections;
+import java.util.List;
+import com.ghkj.gaqcommons.untils.MD5Utils;
+import com.ghkj.gaqdao.utils.RedisUtil;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import tk.mybatis.mapper.entity.Example;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+/*
+* 
+* gen by beetlsql
+*/
+
+@Service
+public class ${className} implements ${implementsName}{
+    Logger logger = LoggerFactory.getLogger(getClass());
+  
+    @Autowired
+    private ${entityClass}Mapper ${daoClassVar};
+
+    @Override
+    @Transactional
+    public Map<String,Object> get(Integer id) {
+        ${entityClass} aa= ${daoClassVar}.selectByPrimaryKey(id);
+        return JSONDataUtil.generateJSONObject("成功",200,aa);
+    }
+
+    @Override
+    @Transactional
+    public Map<String,Object> insertOrUpdate(${entityClass} ${modelClassVar}) {
+         try {
+		    if(${modelClassVar}.getString("id")==null){
+				 ${daoClassVar}.insertSelective(${modelClassVar});
+			}else{
+				 ${daoClassVar}.updateByPrimaryKey(${modelClassVar});
+			}
+           return JSONDataUtil.generateJSONObject("成功",200,null);
+        }catch (Exception e){
+            return JSONDataUtil.generateJSONObject("失败",500,null);
+        }
+    }
+
+    @Override
+    @Transactional
+    public Map<String,Object> delete(List<Integer> idList) {
+        try {
+            for (Integer id : idList){
+                ${daoClassVar}.deleteByPrimaryKey(id);
+             }
+            return JSONDataUtil.generateJSONObject("成功",200,null);
+          }catch (Exception e){
+             return JSONDataUtil.generateJSONObject("失败",500,null);
+          }
+    }
+
+   @Override
+    public Map<String, Object> selectAll(Integer page, Integer size) {
+        Map<String, Object> map = new HashMap<>();
+        PageHelper.startPage(page + 1, size);
+        List<${entityClass}> list = new ArrayList<>();
+        list = ${daoClassVar}.selectAll();
+        PageInfo pageInfo = new PageInfo(list);
+        map.put("rows", list);
+        //当前的页
+        map.put("page", pageInfo.getPageNum());
+        //总页数
+        map.put("pages", pageInfo.getPages());
+        //一共的条数
+        map.put("total", pageInfo.getTotal());
+        return map;
+    }
+}

@@ -1,10 +1,8 @@
+com\ghkj\gaqdao\mapper\AdminUserMapper.class
 com\ghkj\gaqdao\mapper\UserMapper.class
 com\ghkj\gaqdao\utils\DES.class
-com\ghkj\gaqdao\mapper\ConfigureImageMapper.class
-com\ghkj\gaqdao\utils\EncryUtil.class
-com\ghkj\gaqdao\mapper\AdminUserMapper.class
 com\ghkj\gaqdao\mapper\AdminRoleMapper.class
 com\ghkj\gaqdao\utils\RedisConfig.class
 com\ghkj\gaqdao\utils\RedisUtil.class
 com\ghkj\gaqdao\mapper\AdminPermissionMapper.class
-com\ghkj\gaqdao\mapper\AdminUserJpa.class
+com\ghkj\gaqdao\utils\EncryUtil.class

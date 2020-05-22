@@ -1,0 +1,60 @@
+package ${package};
+
+import ${servicePackage}.${entityClass}Service;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
+import io.swagger.annotations.Authorization;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+${imports}
+import java.util.List;
+import java.util.Map;
+/*
+ *
+ * gen by beetlsql
+ */
+
+@RestController
+@RequestMapping(value = "/${basePath}", produces = {"application/json"})
+@Api(value = "${entityClass}", description = "${entityClass}增删改查")
+public class ${className} {
+    @Autowired
+    private ${entityClass}Service ${serviceClassVar};
+
+
+    @ApiOperation(value = "查单个详情", notes = "", authorizations = {@Authorization(value = "token")})
+    @ApiResponses(value = {@ApiResponse(code = 200, message = "successful")})
+    @PostMapping(value = "/get")
+    public Map<String,Object> get(@RequestParam(required = true) Integer id) {
+        return ${serviceClassVar}.get(id);
+    }
+
+    @ApiOperation(value = "增和改", notes = "", authorizations = {@Authorization(value = "token")})
+    @ApiResponses(value = {@ApiResponse(code = 200, message = "successful")})
+    @PostMapping(value = "/insertOrUpdate")
+    public Map<String,Object> insertOrUpdate(@RequestBody(required = true) ${entityClass} ${modelClassVar}) {
+        return ${serviceClassVar}.insertOrUpdate(${modelClassVar});
+    }
+
+
+    @ApiOperation(value = "删多个", notes = "", authorizations = {@Authorization(value = "token")})
+    @ApiResponses(value = {@ApiResponse(code = 200, message = "successful")})
+    @PostMapping(value = "/delete_list")
+    public Map<String,Object> deleteList(@RequestBody(required = true) List<Integer> idList) {
+        return ${serviceClassVar}.delete(idList);
+    }
+
+    /**
+     * 查询列表
+     * @return
+     */
+      @ApiOperation(value = "查询列表", notes = "", authorizations = {@Authorization(value = "token")})
+      @ApiResponses(value = {@ApiResponse(code = 200, message = "successful")})
+      @PostMapping(value = "/findAllList")
+      public Map<String,Object> findAllList(Integer page,Integer size){
+          return ${serviceClassVar}.selectAll(page,size);
+     }
+}
+

@@ -4,7 +4,5 @@ G:\mystudy\gaq-dao\src\main\java\com\ghkj\gaqdao\mapper\AdminRoleMapper.java
 G:\mystudy\gaq-dao\src\main\java\com\ghkj\gaqdao\utils\DES.java
 G:\mystudy\gaq-dao\src\main\java\com\ghkj\gaqdao\utils\EncryUtil.java
 G:\mystudy\gaq-dao\src\main\java\com\ghkj\gaqdao\utils\RedisUtil.java
-G:\mystudy\gaq-dao\src\main\java\com\ghkj\gaqdao\mapper\AdminUserJpa.java
 G:\mystudy\gaq-dao\src\main\java\com\ghkj\gaqdao\mapper\AdminUserMapper.java
 G:\mystudy\gaq-dao\src\main\java\com\ghkj\gaqdao\utils\RedisConfig.java
-G:\mystudy\gaq-dao\src\main\java\com\ghkj\gaqdao\mapper\ConfigureImageMapper.java
