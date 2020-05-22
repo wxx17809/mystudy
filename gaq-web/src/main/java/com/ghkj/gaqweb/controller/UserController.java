@@ -1,7 +1,5 @@
 package com.ghkj.gaqweb.controller;
 import com.alibaba.fastjson.JSONObject;
-import com.ghkj.gaqcommons.untils.TokenUtils;
-import com.ghkj.gaqdao.utils.RedisUtil;
 import com.ghkj.gaqentity.AdminUser;
 import com.ghkj.gaqservice.service.AdminUserService;
 import io.swagger.annotations.*;
@@ -42,11 +40,7 @@ public class UserController {
     public Map<String,Object> findUserList(Integer page,Integer size){
         logger.info("进入查询全部用户的方法===page=="+page+"size===="+size);
         Map<String,Object> map=new HashMap<>();
-        String token= RedisUtil.getObject("token").toString();
-        int result=TokenUtils.ValidToken(token);
-        if(result==0){
-            map=adminUserService.selectAll(page,size);
-        }
+        map=adminUserService.selectAll(page,size);
         logger.info("离开查询全部用户的方法");
         return map;
     }

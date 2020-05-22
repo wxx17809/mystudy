@@ -1,7 +1,7 @@
 package com.ghkj.gaqweb.controller;
 
-import com.alibaba.fastjson.JSONObject;
 import com.ghkj.gaqcommons.untils.SessionUtil;
+import com.ghkj.gaqentity.AdminUser;
 import com.ghkj.gaqservice.service.LoginService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -31,22 +31,25 @@ public class LoginController {
     @Autowired
     private LoginService loginService;
 
+
     /**
      * 登录方法
-     * @param jsonObject
+     * @param adminUser
      * @return
      */
     @ApiOperation("登录方法")
     @PostMapping(value = "/loginUser")
-    public Map<String,Object> loginUser(@RequestBody JSONObject jsonObject){
+    public Map<String,Object> loginUser(@RequestBody AdminUser adminUser){
         logger.info("进入登录用户方法===");
-        String userName=jsonObject.get("userName").toString();
-        String password=jsonObject.get("password").toString();
+        String userName=adminUser.getUsername();
+        String password=adminUser.getPassword();
         logger.info("userName==="+userName+"==password==="+password);
         Map<String,Object> map=loginService.login(userName,password);
         logger.info("离开登录方法==");
         return map;
     }
+
+
 
 
     /**

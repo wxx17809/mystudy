@@ -1,6 +1,5 @@
 package com.ghkj.gaqweb.controller;
 
-import com.ghkj.gaqcommons.untils.TokenUtils;
 import com.ghkj.gaqservice.service.UploadImageServive;
 import io.swagger.annotations.Api;
 import org.slf4j.Logger;
@@ -47,15 +46,11 @@ public class UploadImageController {
      */
     @PostMapping("/uploadPic")
     public Map<String, Object> uploadPic(HttpServletRequest request) {
-        String token=request.getParameter("token");
-        int result=TokenUtils.ValidToken(token);
         logger.info("进入上传图片的方法======");
         Map<String, Object> map = new HashMap<>();
-        if(result==0){
-            MultipartHttpServletRequest params = (MultipartHttpServletRequest) request;
-            List<MultipartFile> fileList = params.getFiles("files");
-            map = uploadImageServive.uploadImage(fileList);
-        }
+        MultipartHttpServletRequest params = (MultipartHttpServletRequest) request;
+        List<MultipartFile> fileList = params.getFiles("files");
+        map = uploadImageServive.uploadImage(fileList);
         return map;
     }
 
@@ -66,14 +61,11 @@ public class UploadImageController {
     @RequestMapping("downFile")
     public String downFile(String token,String fileName,HttpServletResponse response) {
         try {
-            int result=TokenUtils.ValidToken(token);
-            if(result==0){
                 File path = new File(uploadImage);
                 logger.info("路径=====" + path.getAbsolutePath());
                 File file = new File(path.getAbsolutePath()+"/" + fileName);
                 response.reset();
                 downloadZip(file, response);
-            }
         } catch (Exception e) {
             e.printStackTrace();
         }
