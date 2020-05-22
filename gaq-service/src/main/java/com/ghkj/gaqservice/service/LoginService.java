@@ -1,5 +1,8 @@
 package com.ghkj.gaqservice.service;
 
+import com.ghkj.gaqentity.PermissionDto;
+
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -12,6 +15,8 @@ import java.util.Map;
 public interface LoginService {
 
    Map<String, Object> login(String userName, String password);
+
+
 
 
 

@@ -1,7 +1,10 @@
 package com.ghkj.gaqservice.service;
 
+import com.ghkj.gaqentity.AdminPermission;
 import com.ghkj.gaqentity.AdminUser;
+import com.ghkj.gaqentity.PermissionDto;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -48,6 +51,17 @@ public interface AdminUserService {
      */
     Map<String, Object> findOne(Integer id);
 
-
+    /**
+     * 根据用户名查询用户
+     * @param userName
+     * @return
+     */
     AdminUser findByUserName(String userName);
+
+    /**
+     * 查询全部权限菜单
+     * @param adminUser
+     * @return
+     */
+    List<AdminPermission> leftTab(AdminUser adminUser);
 }

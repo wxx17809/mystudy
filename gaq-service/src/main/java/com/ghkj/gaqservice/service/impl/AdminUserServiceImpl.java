@@ -1,9 +1,16 @@
 package com.ghkj.gaqservice.service.impl;
 
+import com.alibaba.fastjson.support.odps.udf.CodecCheck;
 import com.ghkj.gaqcommons.untils.MD5Utils;
+import com.ghkj.gaqcommons.untils.PermssUtil;
+import com.ghkj.gaqdao.mapper.AdminPermissionMapper;
+import com.ghkj.gaqdao.mapper.AdminRoleMapper;
 import com.ghkj.gaqdao.mapper.UserMapper;
 import com.ghkj.gaqdao.utils.RedisUtil;
+import com.ghkj.gaqentity.AdminPermission;
+import com.ghkj.gaqentity.AdminRole;
 import com.ghkj.gaqentity.AdminUser;
+import com.ghkj.gaqentity.PermissionDto;
 import com.ghkj.gaqservice.service.AdminUserService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -11,10 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @version 1.0
@@ -27,6 +31,10 @@ import java.util.Map;
 public class AdminUserServiceImpl implements AdminUserService {
     @Autowired
     private UserMapper userMapper;
+    @Autowired
+    private AdminRoleMapper adminRoleMapper;
+    @Autowired
+    private AdminPermissionMapper adminPermissionMapper;
 
 
 
@@ -151,6 +159,28 @@ public class AdminUserServiceImpl implements AdminUserService {
         return userList.get(0);
     }
 
+    @Override
+    public List<AdminPermission> leftTab(AdminUser adminUser) {
+        AdminRole adminRole = adminRoleMapper.selectByPrimaryKey(adminUser.getRoleId());
+        return leftTab(adminRole);
+    }
+
+    public List<AdminPermission> leftTab(AdminRole adminRole){//权限表主键1,2,3,4,5,6
+        List<AdminPermission> lefiOneVoList=new ArrayList<>();//一级菜单
+        List<AdminPermission> lefichildList=new ArrayList<>();//子极菜单
+        String roleContent[]=adminRole.getRoleContent().split(",");
+        for (int i=0;i<roleContent.length;i++){
+            AdminPermission adminPermission=adminPermissionMapper.selectByPrimaryKey(Integer.parseInt(roleContent[i]));
+            if(adminPermission.getParentId()==0){
+                Example example=new Example(AdminPermission.class);
+                example.createCriteria().andEqualTo("parentId",adminPermission.getPermissionId());
+                lefichildList=adminPermissionMapper.selectByExample(example);
+                adminPermission.setAdminPermissionlist(lefichildList);
+                lefiOneVoList.add(adminPermission);
+            }
+        }
+        return lefiOneVoList;
+    }
 
 }
 

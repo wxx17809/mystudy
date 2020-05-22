@@ -4,7 +4,9 @@ import com.ghkj.gaqcommons.untils.DateTimeUtil;
 import com.ghkj.gaqcommons.untils.JwtTokenManager;
 import com.ghkj.gaqcommons.untils.SessionUtil;
 import com.ghkj.gaqdao.utils.RedisUtil;
+import com.ghkj.gaqentity.AdminPermission;
 import com.ghkj.gaqentity.AdminUser;
+import com.ghkj.gaqentity.PermissionDto;
 import com.ghkj.gaqservice.service.AdminUserService;
 import com.ghkj.gaqservice.service.LoginService;
 import com.nimbusds.jose.JOSEException;
@@ -16,6 +18,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -52,13 +55,16 @@ public class LoginServiceImpl implements LoginService {
             // 传到MyAuthorizingRealm类中的方法进行认证
             subject.login(token);
             token.setRememberMe(true);
-            dataMap.put("success",true);
-            dataMap.put("msg","登录成功");
             AdminUser adminUser=adminUserService.findByUserName(userName);
             String jwtToken =jwtTokenManager.generateToken(adminUser,expiration);
             String key="login_"+String.valueOf(adminUser.getId());
-            dataMap.put("token",jwtToken);
             RedisUtil.set(key,jwtToken,expiration);
+            //获取当前用户所拥有的菜单权限
+            List<AdminPermission> lefiOneVoList = adminUserService.leftTab(adminUser);
+            dataMap.put("token",jwtToken);
+            dataMap.put("success",true);
+            dataMap.put("lefiOneVoList",lefiOneVoList);
+            dataMap.put("msg","登录成功");
         } catch (UnknownAccountException e) {
             dataMap.put("success", false);
             dataMap.put("msg", "用户不存在!");
