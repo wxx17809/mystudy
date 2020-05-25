@@ -26,8 +26,10 @@ public class GenCode {
         init();
     }
 
+    //执行代码，生成所有的代码
     public static void main(String[] args) throws Exception {
         GenCode gen = new GenCode();
+        //表名
          gen.genTable("jbbs_zhuti");
 
 
