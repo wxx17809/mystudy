@@ -46,26 +46,6 @@
             <version>4.0.1</version>
             <scope>provided</scope>
         </dependency>
-
-        <!-- 读取tif图片的 -->
-        <dependency>
-            <groupId>com.adobe.xmp</groupId>
-            <artifactId>xmpcore</artifactId>
-            <version>5.1.2</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.11</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.drewnoakes</groupId>
-            <artifactId>metadata-extractor</artifactId>
-            <version>2.12.0</version>
-        </dependency>
         <!--生成代码使用-->
         <dependency>
             <groupId>mysql</groupId>
@@ -90,5 +70,29 @@
             <artifactId>fastdfs-client</artifactId>
             <version>1.26.2</version>
         </dependency>
+        <!-- 解析excel使用的包开始 -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>4.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>4.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>5.2.6.RELEASE</version>
+        </dependency>
+        <!-- 解析excel使用的包结束 -->
+        <!-- ftp上传 ，ssh执行linux命令-->
+        <dependency>
+            <groupId>com.jcraft</groupId>
+            <artifactId>jsch</artifactId>
+            <version>0.1.55</version>
+        </dependency>
     </dependencies>
+
 </project>
