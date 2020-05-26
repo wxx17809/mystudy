@@ -1,4 +1,5 @@
 com\ghkj\gaqentity\AdminUser.class
+com\ghkj\gaqentity\PermissionDto.class
 com\ghkj\gaqentity\AdminPermission.class
 com\ghkj\gaqentity\AdminRole.class
 com\ghkj\gaqentity\TokenUser.class

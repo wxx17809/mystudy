@@ -47,7 +47,6 @@ public class Ftp {
 
     /**
      * 是否已连接
-     *
      * @return
      */
     private boolean isConnected() {
@@ -56,7 +55,6 @@ public class Ftp {
 
     /**
      * 获取本地线程存储的sftp客户端
-     *
      * @return
      * @throws Exception
      */
@@ -136,7 +134,6 @@ public class Ftp {
 
     /**
      * 下载文件
-     *
      * @param directory    下载目录
      * @param downloadFile 下载的文件
      * @param saveFile     存在本地的路径
@@ -162,7 +159,6 @@ public class Ftp {
 
     /**
      * 删除文件
-     *
      * @param direct 要删除文件所在目录
      * @param direct 文件
      */
@@ -177,7 +173,6 @@ public class Ftp {
 
     /**
      * 删除文件
-     *
      * @param list 要删除文件所在目录
      */
     public void delete(List<String> list) {
@@ -192,7 +187,6 @@ public class Ftp {
 
     /**
      * 删除文件件
-     *
      * @param path 要删除文件路劲
      */
     public void deleteDirectory(String path, List<String> list) {
@@ -229,7 +223,6 @@ public class Ftp {
 
     /**
      * 列出目录下的文件
-     *
      * @param directory 要列出的目录
      * @return
      * @throws SftpException
@@ -242,7 +235,6 @@ public class Ftp {
 
     /**
      * 将输入流的数据上传到sftp作为文件
-     *
      * @param directory    上传到该目录
      * @param sftpFileName sftp端文件名
      * @param input        输入流

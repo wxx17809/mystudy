@@ -12,24 +12,38 @@ import java.util.Date;
  */
 public class DateTimeUtil {
 
-    public static  String NowTime(){
+    public static String NowTime() {
 
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyyMMddHHmmss");
-        Date date=new Date();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
+        Date date = new Date();
         return sdf.format(date);
     }
 
 
     /**
      * 失效时间 当前时间+10min
+     *
      * @return
      */
-    public static String expriredDate(){
+    public static String expriredDate() {
         Date now = new Date();
         Date now_10 = new Date(now.getTime() + 600000); //1分钟=60秒，10*60=600秒  1秒=1000毫秒  所以:600*1000=600000
-        SimpleDateFormat dateFormat =new SimpleDateFormat("yyyyMMddHHmmss");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
         String nowTime_10 = dateFormat.format(now_10);
         return nowTime_10;
     }
+
+    /**
+     * date 类型转 string
+     * 吴璇璇
+     * @param dateDate
+     * @return
+     */
+    public static String dateToStrLong(java.util.Date dateDate) {
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String dateString = formatter.format(dateDate);
+        return dateString;
+    }
+    //https://www.cnblogs.com/sharpest/p/7879377.html
 
 }

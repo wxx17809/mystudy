@@ -42,7 +42,7 @@ public class ShiroConfig {
         filterChainDefinitionMap.put("/html/**", "anon");
         //登录
         filterChainDefinitionMap.put("/login/**", "anon");
-        //filterChainDefinitionMap.put("/configureImage/**", "anon");
+        filterChainDefinitionMap.put("/exportExcel/**", "anon");
         filterChainDefinitionMap.put("/swagger-ui.html", "anon");
         filterChainDefinitionMap.put("/swagger-resources", "anon");
         filterChainDefinitionMap.put("/v2/api-docs", "anon");

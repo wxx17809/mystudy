@@ -9,11 +9,10 @@ G:\mystudy\gaq-web\src\main\java\com\ghkj\gaqweb\controller\UserController.java
 G:\mystudy\gaq-web\src\main\java\com\ghkj\gaqweb\config\WebMvcConfig.java
 G:\mystudy\gaq-web\src\main\java\com\ghkj\gaqweb\config\SwaggerConfig.java
 G:\mystudy\gaq-web\src\main\java\com\ghkj\gaqweb\untils\EsUtils.java
+G:\mystudy\gaq-web\src\main\java\com\ghkj\gaqweb\config\AuthorityIntercepter.java
 G:\mystudy\gaq-web\src\main\java\com\ghkj\gaqweb\config\ElasticsearchConfig.java
 G:\mystudy\gaq-web\src\main\java\com\ghkj\gaqweb\untils\FileConfig.java
-G:\mystudy\gaq-web\src\main\java\com\ghkj\gaqweb\untils\SSHHelper.java
 G:\mystudy\gaq-web\src\main\java\com\ghkj\gaqweb\config\ShiroConfig.java
 G:\mystudy\gaq-web\src\main\java\com\ghkj\gaqweb\GaqWebApplication.java
 G:\mystudy\gaq-web\src\main\java\com\ghkj\gaqweb\config\MyShiroRealm.java
 G:\mystudy\gaq-web\src\main\java\com\ghkj\gaqweb\filter\CorsFilter.java
-G:\mystudy\gaq-web\src\main\java\com\ghkj\gaqweb\filter\JwtTokenFilter.java

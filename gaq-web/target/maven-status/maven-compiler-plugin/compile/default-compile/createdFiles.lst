@@ -1,4 +1,4 @@
-com\ghkj\gaqweb\filter\JwtTokenFilter.class
+com\ghkj\gaqweb\config\AuthorityIntercepter.class
 com\ghkj\gaqweb\controller\LoginController.class
 com\ghkj\gaqweb\config\WebMvcConfig.class
 com\ghkj\gaqweb\controller\HellowordController.class

@@ -1,7 +1,10 @@
 package com.ghkj.gaqweb.controller;
 
+import com.ghkj.gaqcommons.untils.Ftp;
+import com.ghkj.gaqcommons.untils.SSHUtils;
 import com.ghkj.gaqservice.service.UploadImageServive;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,9 +19,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.net.URLEncoder;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @version 1.0
@@ -99,6 +100,28 @@ public class UploadImageController {
             }
         }
         return null;
+    }
+
+    //用FTP上传
+    @ApiOperation(value = "上传和执行命令")
+    @PostMapping("/install")
+    public Map<String,Object> install() {
+        Map<String,Object> map=new HashMap<>();
+        try {
+            //ftp上传文件先连接，在上传。第一个参数是要上传的目录，第二个参数是本地目录下的图片
+            Ftp ftp = Ftp.getSftpUtil("106.13.229.155", 22, "root", "Aa19980112z!");
+            ftp.upload("/root", "C:\\Users\\Administrator\\Desktop\\qianduan\\5.jpg");
+            ftp.delete("/root","5.jpg");
+            //执行linux命令
+            SSHUtils sshUtils=SSHUtils.getSSHUtils("106.13.229.155", 22, "root", "Aa19980112z!");
+            sshUtils.execCommandByShell("cd /root && ls");
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            SSHUtils.release();
+            Ftp.release();
+        }
+        return map;
     }
 
 
