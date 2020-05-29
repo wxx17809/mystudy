@@ -144,5 +144,16 @@
             <artifactId>beetl-framework-starter</artifactId>
             <version>1.1.72.RELEASE</version>
         </dependency>
+        <!-- sqlite依赖的包和Mybatis-plus依赖包 -->
+        <dependency>
+            <groupId>org.xerial</groupId>
+            <artifactId>sqlite-jdbc</artifactId>
+            <version>3.23.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.0.6</version>
+        </dependency>
     </dependencies>
 </project>
