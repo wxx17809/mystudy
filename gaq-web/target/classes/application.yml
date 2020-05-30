@@ -21,6 +21,10 @@ spring:
     password : root
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
+#     url: jdbc:sqlite::resource:db/test.db
+#     driver-class-name: org.sqlite.JDBC
+#     username:
+#     password:
   cache:
     type: redis
   redis:
@@ -45,10 +49,7 @@ mybatis:
   configuration:
     # 开启驼峰映射
     map-underscore-to-camel-case: true
-#mapper:
-#  mappers: com.ghkj.gaqcommons.untils.MyMapper
-#  not-empty: false
-#  identity: MYSQL
+
 
 # pageHelper分页配置
 pagehelper:
@@ -71,10 +72,10 @@ upload:
   maxFileSize: 100MB
   maxRequestSize: 1000MB
 
-jwt:
-  secret: wuxuanxuan
-  #expiration: 86400 #过期的时间是1天（秒）
-  expiration: 3600 #过期的时间是1天（秒）
+#token过期时间
+accessTokenExpireTime: 86400 #过期的时间是1天（秒）
+
+
 
 
 

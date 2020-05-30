@@ -64,4 +64,6 @@ public interface AdminUserService {
      * @return
      */
     List<AdminPermission> leftTab(AdminUser adminUser);
+
+    AdminUser selectone(String userName, String password);
 }

@@ -3,3 +3,4 @@ com\ghkj\gaqentity\PermissionDto.class
 com\ghkj\gaqentity\AdminPermission.class
 com\ghkj\gaqentity\AdminRole.class
 com\ghkj\gaqentity\TokenUser.class
+com\ghkj\gaqentity\Student.class

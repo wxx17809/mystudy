@@ -1,4 +1,3 @@
-com\ghkj\gaqweb\config\AuthorityIntercepter.class
 com\ghkj\gaqweb\controller\LoginController.class
 com\ghkj\gaqweb\config\WebMvcConfig.class
 com\ghkj\gaqweb\controller\HellowordController.class
@@ -7,8 +6,10 @@ com\ghkj\gaqweb\GaqWebApplication.class
 com\ghkj\gaqweb\untils\EsUtils.class
 com\ghkj\gaqweb\config\MyShiroRealm.class
 com\ghkj\gaqweb\controller\HjjController.class
+com\ghkj\gaqweb\filter\JwtFilter.class
 com\ghkj\gaqweb\untils\FileUtil.class
 com\ghkj\gaqweb\untils\ExcelReader.class
+com\ghkj\gaqweb\controller\ExcelController.class
 com\ghkj\gaqweb\controller\UploadImageController.class
 com\ghkj\gaqweb\controller\ZipDealController.class
 com\ghkj\gaqweb\config\ShiroConfig.class

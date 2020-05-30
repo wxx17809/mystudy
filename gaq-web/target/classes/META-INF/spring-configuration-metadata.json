@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "name": "upload",
+      "type": "com.ghkj.gaqweb.untils.FileConfig",
+      "sourceType": "com.ghkj.gaqweb.untils.FileConfig"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}

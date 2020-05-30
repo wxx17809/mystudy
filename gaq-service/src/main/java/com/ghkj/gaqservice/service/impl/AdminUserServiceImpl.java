@@ -165,6 +165,15 @@ public class AdminUserServiceImpl implements AdminUserService {
         return leftTab(adminRole);
     }
 
+    @Override
+    public AdminUser selectone(String userName, String password) {
+        AdminUser adminUser1=new AdminUser();
+        adminUser1.setUsername(userName);
+        adminUser1.setPassword(password);
+        AdminUser adminUser=userMapper.selectOne(adminUser1);
+        return adminUser;
+    }
+
     public List<AdminPermission> leftTab(AdminRole adminRole){//权限表主键1,2,3,4,5,6
         List<AdminPermission> lefiOneVoList=new ArrayList<>();//一级菜单
         List<AdminPermission> lefichildList=new ArrayList<>();//子极菜单
