@@ -3,35 +3,49 @@ package com.ghkj.gaqcommons.untils.jwtUtil;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
-
 import com.auth0.jwt.exceptions.JWTDecodeException;
 import com.auth0.jwt.interfaces.DecodedJWT;
-import com.ghkj.gaqcommons.untils.DateTimeUtil;
 import com.ghkj.gaqcommons.untils.exception.CustomException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Date;
 
-public class JWTUtil {
+/**
+ * JAVA-JWT工具类
+ * @author Wang926454
+ * @date 2018/8/30 11:45
+ */
+@Component
+public class JwtUtil {
 
     /**
      * logger
      */
-    private static final Logger logger = LoggerFactory.getLogger(JWTUtil.class);
+    private static final Logger logger = LoggerFactory.getLogger(JwtUtil.class);
 
     /**
      * 过期时间改为从配置文件获取
      */
     private static String accessTokenExpireTime;
 
+    /**
+     * JWT认证加密私钥(Base64加密)
+     */
+    private static String encryptJWTKey;
+
     @Value("${accessTokenExpireTime}")
     public void setAccessTokenExpireTime(String accessTokenExpireTime) {
-        JWTUtil.accessTokenExpireTime = accessTokenExpireTime;
+        JwtUtil.accessTokenExpireTime = accessTokenExpireTime;
     }
 
+    @Value("${encryptJWTKey}")
+    public void setEncryptJWTKey(String encryptJWTKey) {
+        JwtUtil.encryptJWTKey = encryptJWTKey;
+    }
 
     /**
      * 校验token是否正确
@@ -40,10 +54,10 @@ public class JWTUtil {
      * @author Wang926454
      * @date 2018/8/31 9:05
      */
-    public static boolean verify(String token,String password) {
+    public static boolean verify(String token) {
         try {
             // 帐号加JWT私钥解密
-            String secret = getClaim(token, "account") + Base64ConvertUtil.decode(password);
+            String secret = getClaim(token, Constant.ACCOUNT) + Base64ConvertUtil.decode(encryptJWTKey);
             Algorithm algorithm = Algorithm.HMAC256(secret);
             JWTVerifier verifier = JWT.require(algorithm).build();
             verifier.verify(token);
@@ -53,7 +67,6 @@ public class JWTUtil {
             throw new CustomException("JWTToken认证解密出现UnsupportedEncodingException异常:" + e.getMessage());
         }
     }
-
 
 
     /**
@@ -75,8 +88,6 @@ public class JWTUtil {
         }
     }
 
-
-
     /**
      * 生成签名
      * @param account 帐号
@@ -84,18 +95,17 @@ public class JWTUtil {
      * @author Wang926454
      * @date 2018/8/31 9:07
      */
-    public static String sign(String account, String password) {
+    public static String sign(String account, String currentTimeMillis) {
         try {
             // 帐号加JWT私钥加密
-            String secret = account + Base64ConvertUtil.decode(password);
+            String secret = account + Base64ConvertUtil.decode(encryptJWTKey);
             // 此处过期时间是以毫秒为单位，所以乘以1000
             Date date = new Date(System.currentTimeMillis() + Long.parseLong(accessTokenExpireTime) * 1000);
             Algorithm algorithm = Algorithm.HMAC256(secret);
             // 附带account帐号信息
             return JWT.create()
                     .withClaim("account", account)
-                    .withClaim("password", password)
-                    .withClaim("currentTimeMillis", DateTimeUtil.NowTime())
+                    .withClaim("currentTimeMillis", currentTimeMillis)
                     .withExpiresAt(date)
                     .sign(algorithm);
         } catch (UnsupportedEncodingException e) {
@@ -103,4 +113,6 @@ public class JWTUtil {
             throw new CustomException("JWTToken加密出现UnsupportedEncodingException异常:" + e.getMessage());
         }
     }
+
+
 }

@@ -3,8 +3,6 @@ package com.ghkj.gaqentity;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Table( name ="admin_permission")
@@ -27,6 +25,5 @@ public class AdminPermission {
 
     private Integer permissionIndex;
 
-    private List<AdminPermission> adminPermissionlist = new ArrayList<AdminPermission>();
 
 }

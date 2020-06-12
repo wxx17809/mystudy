@@ -35,14 +35,6 @@ public class RoleAndPermissServiceImpl implements RoleAndPermissService {
         if(adminRole==null){
             return list;
         }
-        String[] rolecontent=adminRole.getRoleContent().split(",");
-        for(String pid:rolecontent){
-            String pcode= PermssUtil.adminPermissionMap.get(Integer.valueOf(pid));
-            if(pcode!=null){
-                //添加权限
-                list.add(pcode);
-            }
-        }
         return list;
     }
 }

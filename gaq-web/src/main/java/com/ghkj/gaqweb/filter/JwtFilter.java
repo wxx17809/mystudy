@@ -4,6 +4,7 @@ import com.auth0.jwt.exceptions.SignatureVerificationException;
 import com.auth0.jwt.exceptions.TokenExpiredException;
 import com.ghkj.gaqcommons.untils.exception.CustomException;
 import com.ghkj.gaqcommons.untils.jwtUtil.*;
+import com.ghkj.gaqcommons.untils.redis.JedisUtil;
 import org.apache.shiro.web.filter.authc.BasicHttpAuthenticationFilter;
 import org.apache.shiro.web.util.WebUtils;
 import org.slf4j.Logger;
@@ -19,6 +20,7 @@ import java.io.PrintWriter;
 
 /**
  * JWT过滤
+ *
  * @author dolyw.com
  * @date 2018/8/30 15:47
  */
@@ -27,6 +29,10 @@ public class JwtFilter extends BasicHttpAuthenticationFilter {
      * logger
      */
     private static final Logger logger = LoggerFactory.getLogger(JwtFilter.class);
+
+
+    private static String refreshTime = "1800";
+
 
     /**
      * 这里我们详细说明下为什么最终返回的都是true，即允许访问
@@ -39,6 +45,7 @@ public class JwtFilter extends BasicHttpAuthenticationFilter {
      */
     @Override
     protected boolean isAccessAllowed(ServletRequest request, ServletResponse response, Object mappedValue) {
+        logger.info("refreshTime======" + refreshTime);
         // 查看当前Header中是否携带Authorization属性(Token)，有的话就进行登录认证授权
         if (this.isLoginAttempt(request, response)) {
             try {
@@ -127,33 +134,31 @@ public class JwtFilter extends BasicHttpAuthenticationFilter {
      * 此处为AccessToken刷新，进行判断RefreshToken是否过期，未过期就返回新的AccessToken且继续正常访问
      */
     private boolean refreshToken(ServletRequest request, ServletResponse response) {
+        logger.info("refreshTime======" + refreshTime);
         // 拿到当前Header中Authorization的AccessToken(Shiro中getAuthzHeader方法已经实现)
         String token = this.getAuthzHeader(request);
         // 获取当前Token的帐号信息
-        String account = JWTUtil.getClaim(token, Constant.ACCOUNT);
+        String account = JwtUtil.getClaim(token, Constant.ACCOUNT);
         // 判断Redis中RefreshToken是否存在
         if (JedisUtil.exists(Constant.PREFIX_SHIRO_REFRESH_TOKEN + account)) {
             // Redis中RefreshToken还存在，获取RefreshToken的时间戳
             String currentTimeMillisRedis = JedisUtil.getObject(Constant.PREFIX_SHIRO_REFRESH_TOKEN + account).toString();
             // 获取当前AccessToken中的时间戳，与RefreshToken的时间戳对比，如果当前时间戳一致，进行AccessToken刷新
-            if (JWTUtil.getClaim(token, Constant.CURRENT_TIME_MILLIS).equals(currentTimeMillisRedis)) {
+            if (JwtUtil.getClaim(token, Constant.CURRENT_TIME_MILLIS).equals(currentTimeMillisRedis)) {
                 // 获取当前最新时间戳
                 String currentTimeMillis = String.valueOf(System.currentTimeMillis());
-                // 读取配置文件，获取refreshTokenExpireTime属性
-                PropertiesUtil.readProperties("config.properties");
-                String refreshTokenExpireTime = PropertiesUtil.getProperty("refreshTokenExpireTime");
                 // 设置RefreshToken中的时间戳为当前最新时间戳，且刷新过期时间重新为30分钟过期(配置文件可配置refreshTokenExpireTime属性)
-                JedisUtil.setObject(Constant.PREFIX_SHIRO_REFRESH_TOKEN + account, currentTimeMillis, Integer.parseInt(refreshTokenExpireTime));
+                JedisUtil.setObject(Constant.PREFIX_SHIRO_REFRESH_TOKEN + account, currentTimeMillis, Integer.parseInt(refreshTime));
                 // 刷新AccessToken，设置时间戳为当前最新时间戳
-                token = JWTUtil.sign(account, currentTimeMillis);
+                token = JwtUtil.sign(account, currentTimeMillis);
                 // 将新刷新的AccessToken再次进行Shiro的登录
                 JwtToken jwtToken = new JwtToken(token);
                 // 提交给UserRealm进行认证，如果错误他会抛出异常并被捕获，如果没有抛出异常则代表登入成功，返回true
                 this.getSubject(request, response).login(jwtToken);
                 // 最后将刷新的AccessToken存放在Response的Header中的Authorization字段返回
                 HttpServletResponse httpServletResponse = WebUtils.toHttp(response);
-                httpServletResponse.setHeader("token", token);
-                httpServletResponse.setHeader("Access-Control-Expose-Headers", "token");
+                httpServletResponse.setHeader("Authorization", token);
+                httpServletResponse.setHeader("Access-Control-Expose-Headers", "Authorization");
                 return true;
             }
         }

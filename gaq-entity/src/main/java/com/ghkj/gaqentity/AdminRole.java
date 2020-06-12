@@ -15,8 +15,6 @@ public class AdminRole {
 
     private String roleName;
 
-    private String roleContent;
-
     private Date createTime;
 
 }

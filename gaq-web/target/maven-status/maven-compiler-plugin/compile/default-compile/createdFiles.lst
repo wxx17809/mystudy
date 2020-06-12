@@ -2,9 +2,9 @@ com\ghkj\gaqweb\controller\LoginController.class
 com\ghkj\gaqweb\config\WebMvcConfig.class
 com\ghkj\gaqweb\controller\HellowordController.class
 com\ghkj\gaqweb\config\ElasticsearchConfig.class
+com\ghkj\gaqweb\config\UserRealm.class
 com\ghkj\gaqweb\GaqWebApplication.class
 com\ghkj\gaqweb\untils\EsUtils.class
-com\ghkj\gaqweb\config\MyShiroRealm.class
 com\ghkj\gaqweb\controller\HjjController.class
 com\ghkj\gaqweb\filter\JwtFilter.class
 com\ghkj\gaqweb\untils\FileUtil.class

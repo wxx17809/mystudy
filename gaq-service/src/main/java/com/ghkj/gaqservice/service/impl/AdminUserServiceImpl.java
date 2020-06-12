@@ -1,8 +1,7 @@
 package com.ghkj.gaqservice.service.impl;
 
-import com.alibaba.fastjson.support.odps.udf.CodecCheck;
 import com.ghkj.gaqcommons.untils.MD5Utils;
-import com.ghkj.gaqcommons.untils.PermssUtil;
+import com.ghkj.gaqcommons.untils.userJIaMi.AesCipherUtil;
 import com.ghkj.gaqdao.mapper.AdminPermissionMapper;
 import com.ghkj.gaqdao.mapper.AdminRoleMapper;
 import com.ghkj.gaqdao.mapper.UserMapper;
@@ -10,7 +9,6 @@ import com.ghkj.gaqdao.utils.RedisUtil;
 import com.ghkj.gaqentity.AdminPermission;
 import com.ghkj.gaqentity.AdminRole;
 import com.ghkj.gaqentity.AdminUser;
-import com.ghkj.gaqentity.PermissionDto;
 import com.ghkj.gaqservice.service.AdminUserService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -69,24 +67,25 @@ public class AdminUserServiceImpl implements AdminUserService {
     public Map<String, Object> saveOrUpdateUser(AdminUser jbbsUser) {
         Map<String, Object> map = new HashMap<>();
         int result = 0;
-        if (jbbsUser.getId() != null) {
+        if (jbbsUser.getUserId() != null) {
             //走修改
-            String password= MD5Utils.stringToMD5(jbbsUser.getPassword());
+            String password= AesCipherUtil.enCrypto(jbbsUser.getUserName()+jbbsUser.getPassword());
             jbbsUser.setPassword(password);
             result = userMapper.updateByPrimaryKeySelective(jbbsUser);
             if(result > 0){
-                String key = "login_" + jbbsUser.getId();
+                String key = "login_" + jbbsUser.getUserId();
                 boolean haskey = RedisUtil.hasKey(key);
                 if (haskey) {
                     RedisUtil.del(key);
                     System.out.println("删除缓存中的key=========>" + key);
                 }
                 // 再将更新后的数据加入缓存
-                AdminUser userNew=userMapper.selectByPrimaryKey(jbbsUser.getId());
+                AdminUser userNew=userMapper.selectByPrimaryKey(jbbsUser.getUserId());
                 RedisUtil.setObject(key,userNew);
             }
         } else {
-            String password= MD5Utils.stringToMD5(jbbsUser.getPassword());
+            //String password= MD5Utils.stringToMD5(jbbsUser.getPassword());
+            String password= AesCipherUtil.enCrypto(jbbsUser.getUserName()+jbbsUser.getPassword());
             jbbsUser.setPassword(password);
             result = userMapper.insertSelective(jbbsUser);
         }
@@ -154,42 +153,42 @@ public class AdminUserServiceImpl implements AdminUserService {
     @Override
     public AdminUser findByUserName(String userName) {
         AdminUser adminUser=new AdminUser();
-        adminUser.setUsername(userName);
+        adminUser.setUserName(userName);
         List<AdminUser> userList=userMapper.select(adminUser);
         return userList.get(0);
     }
 
     @Override
     public List<AdminPermission> leftTab(AdminUser adminUser) {
-        AdminRole adminRole = adminRoleMapper.selectByPrimaryKey(adminUser.getRoleId());
-        return leftTab(adminRole);
+        AdminRole adminRole = adminRoleMapper.selectByPrimaryKey(adminUser.getUserId());
+        return null;
     }
 
     @Override
     public AdminUser selectone(String userName, String password) {
         AdminUser adminUser1=new AdminUser();
-        adminUser1.setUsername(userName);
+        adminUser1.setUserName(userName);
         adminUser1.setPassword(password);
         AdminUser adminUser=userMapper.selectOne(adminUser1);
         return adminUser;
     }
 
-    public List<AdminPermission> leftTab(AdminRole adminRole){//权限表主键1,2,3,4,5,6
-        List<AdminPermission> lefiOneVoList=new ArrayList<>();//一级菜单
-        List<AdminPermission> lefichildList=new ArrayList<>();//子极菜单
-        String roleContent[]=adminRole.getRoleContent().split(",");
-        for (int i=0;i<roleContent.length;i++){
-            AdminPermission adminPermission=adminPermissionMapper.selectByPrimaryKey(Integer.parseInt(roleContent[i]));
-            if(adminPermission.getParentId()==0){
-                Example example=new Example(AdminPermission.class);
-                example.createCriteria().andEqualTo("parentId",adminPermission.getPermissionId());
-                lefichildList=adminPermissionMapper.selectByExample(example);
-                adminPermission.setAdminPermissionlist(lefichildList);
-                lefiOneVoList.add(adminPermission);
-            }
-        }
-        return lefiOneVoList;
-    }
+//    public List<AdminPermission> leftTab(AdminRole adminRole){//权限表主键1,2,3,4,5,6
+//        List<AdminPermission> lefiOneVoList=new ArrayList<>();//一级菜单
+//        List<AdminPermission> lefichildList=new ArrayList<>();//子极菜单
+//        String roleContent[]=adminRole.getRoleContent().split(",");
+//        for (int i=0;i<roleContent.length;i++){
+//            AdminPermission adminPermission=adminPermissionMapper.selectByPrimaryKey(Integer.parseInt(roleContent[i]));
+//            if(adminPermission.getParentId()==0){
+//                Example example=new Example(AdminPermission.class);
+//                example.createCriteria().andEqualTo("parentId",adminPermission.getPermissionId());
+//                lefichildList=adminPermissionMapper.selectByExample(example);
+//                adminPermission.setAdminPermissionlist(lefichildList);
+//                lefiOneVoList.add(adminPermission);
+//            }
+//        }
+//        return lefiOneVoList;
+//    }
 
 }
 

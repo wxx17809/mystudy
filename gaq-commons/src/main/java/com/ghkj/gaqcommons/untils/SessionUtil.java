@@ -39,17 +39,7 @@ public class SessionUtil {
 		return (AdminUser)subject.getSession().getAttribute(sessionKeyadmin);
 	}
 	
-	
-//	/**
-//	 * 方法描述：左侧菜单
-//	 * 创建人：王珍珍
-//	 * 创建时间：2018年5月7日 下午7:52:06
-//	 * @param lefList
-//	 */
-//	public static void setAdminPermss(List<PermissionDto> lefList){
-//		Subject currentUser = SecurityUtils.getSubject();
-//		currentUser.getSession().setAttribute(lefiOneVoList,lefList);
-//	}
+
 
 	
 	/**

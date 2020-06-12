@@ -3,12 +3,14 @@ package com.ghkj.gaqcommons.untils.jwtUtil;
 import org.apache.shiro.authc.AuthenticationToken;
 
 /**
- * JwtToken:实现shiro的AuthenticationToken接口的类JwtToken
- * @author zhangxiaoxiang
- * @date: 2019/07/12
+ * JwtToken
+ * @author dolyw.com
+ * @date 2018/8/30 14:06
  */
-public class JwtToken implements AuthenticationToken{
-
+public class JwtToken implements AuthenticationToken {
+    /**
+     * Token
+     */
     private String token;
 
     public JwtToken(String token) {

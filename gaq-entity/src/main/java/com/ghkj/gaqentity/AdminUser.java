@@ -11,15 +11,11 @@ import java.util.Date;
 public class AdminUser {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Integer userId;
 
-    private String username;
+    private String userName;
 
     private String password;
-
-    private String name;
-
-    private Integer roleId;
 
     private Date lastLoginTime;
 

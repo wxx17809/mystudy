@@ -2,8 +2,8 @@ package com.ghkj.gaqdao.mapper;
 
 
 
-import com.ghkj.gaqcommons.untils.MyMapper;
 import com.ghkj.gaqentity.AdminUser;
+import tk.mybatis.mapper.common.Mapper;
 
 
 /**
@@ -14,7 +14,7 @@ import com.ghkj.gaqentity.AdminUser;
  * @Date : 2019/8/29 11:10
  */
 
-public interface UserMapper extends MyMapper<AdminUser> {
+public interface UserMapper extends Mapper<AdminUser> {
 
 
 

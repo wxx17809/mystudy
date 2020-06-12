@@ -41,7 +41,7 @@ public class LoginController {
     @PostMapping(value = "/loginUser")
     public Map<String,Object> loginUser(@RequestBody AdminUser adminUser){
         logger.info("进入登录用户方法===");
-        String userName=adminUser.getUsername();
+        String userName=adminUser.getUserName();
         String password=adminUser.getPassword();
         logger.info("userName==="+userName+"==password==="+password);
         Map<String,Object> map=loginService.login(userName,password);

@@ -13,4 +13,21 @@
     PERMISSION_ID, PERMISSION_NAME, PERMISSION_URL, PARENT_ID, PERMISSION_CODE, PERMISSION_INDEX
   </sql>
 
+  <select id="findPermissionByRole" resultType="com.ghkj.gaqentity.AdminPermission"
+          parameterType="com.ghkj.gaqentity.AdminRole">
+    SELECT
+    p.PERMISSION_ID as id,
+    p.PERMISSION_NAME as name,
+    FROM
+    admin_role r
+    LEFT JOIN role_permission rp ON r.ROLE_ID = rp.ROLE_ID
+    LEFT JOIN admin_permission p ON p.PERMISSION_ID = rp.PERMISSION_ID
+    <where>
+      1 = 1
+      <if test="name != null and name != '' ">
+        AND r.ROLE_NAME = #{name}
+      </if>
+    </where>
+  </select>
+
 </mapper>

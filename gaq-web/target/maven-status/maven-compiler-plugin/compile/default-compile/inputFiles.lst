@@ -2,6 +2,7 @@ G:\mystudy\gaq-web\src\main\java\com\ghkj\gaqweb\controller\UploadImageControlle
 G:\mystudy\gaq-web\src\main\java\com\ghkj\gaqweb\controller\ZipDealController.java
 G:\mystudy\gaq-web\src\main\java\com\ghkj\gaqweb\controller\LoginController.java
 G:\mystudy\gaq-web\src\main\java\com\ghkj\gaqweb\untils\ExcelReader.java
+G:\mystudy\gaq-web\src\main\java\com\ghkj\gaqweb\config\UserRealm.java
 G:\mystudy\gaq-web\src\main\java\com\ghkj\gaqweb\controller\HjjController.java
 G:\mystudy\gaq-web\src\main\java\com\ghkj\gaqweb\controller\HellowordController.java
 G:\mystudy\gaq-web\src\main\java\com\ghkj\gaqweb\untils\FileUtil.java
@@ -15,5 +16,4 @@ G:\mystudy\gaq-web\src\main\java\com\ghkj\gaqweb\controller\ExcelController.java
 G:\mystudy\gaq-web\src\main\java\com\ghkj\gaqweb\untils\FileConfig.java
 G:\mystudy\gaq-web\src\main\java\com\ghkj\gaqweb\config\ShiroConfig.java
 G:\mystudy\gaq-web\src\main\java\com\ghkj\gaqweb\GaqWebApplication.java
-G:\mystudy\gaq-web\src\main\java\com\ghkj\gaqweb\config\MyShiroRealm.java
 G:\mystudy\gaq-web\src\main\java\com\ghkj\gaqweb\filter\CorsFilter.java

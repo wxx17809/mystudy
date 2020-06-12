@@ -89,21 +89,21 @@ public class ShiroConfig {
         return hashedCredentialsMatcher;
     }
 
-
-    //将自己的验证方式加入容器
-    @Bean
-    public MyShiroRealm myShiroRealm() {
-        MyShiroRealm myShiroRealm = new MyShiroRealm();
-        myShiroRealm.setCredentialsMatcher(hashedCredentialsMatcher());
-        return myShiroRealm;
-    }
+//
+//    //将自己的验证方式加入容器
+//    @Bean
+//    public MyShiroRealm myShiroRealm() {
+//        MyShiroRealm myShiroRealm = new MyShiroRealm();
+//        myShiroRealm.setCredentialsMatcher(hashedCredentialsMatcher());
+//        return myShiroRealm;
+//    }
 
 
     //权限管理，配置主要是Realm的管理认证
     @Bean
-    public SecurityManager securityManager() {
+    public SecurityManager securityManager(UserRealm myRealm) {
         DefaultWebSecurityManager securityManager = new DefaultWebSecurityManager();
-        securityManager.setRealm(myShiroRealm());
+        securityManager.setRealm(myRealm);
         /*
          * 关闭shiro自带的session，详情见文档
          * http://shiro.apache.org/session-management.html#SessionManagement-StatelessApplications%28Sessionless%29

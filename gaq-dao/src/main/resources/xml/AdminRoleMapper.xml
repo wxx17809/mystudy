@@ -11,4 +11,20 @@
     ROLE_ID, ROLE_NAME, ROLE_CONTENT, CREATE_TIME
   </sql>
 
+  <select id="findRoleByUser" resultType="com.ghkj.gaqentity.AdminRole" parameterType="com.ghkj.gaqentity.AdminUser">
+    SELECT
+    r.ROLE_ID as id,
+    r.ROLE_NAME as name
+    FROM
+    admin_user u
+    LEFT JOIN user_role ur ON u.id = ur.user_id
+    LEFT JOIN admin_role r ON r.id = ur.role_id
+    <where>
+      1 = 1
+      <if test="username != null and username != '' ">
+        AND u.USER_NAME LIKE CONCAT('%',#{username},'%')
+      </if>
+    </where>
+  </select>
+
 </mapper>
