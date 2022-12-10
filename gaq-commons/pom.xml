@@ -78,7 +78,7 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
-            <version>5.2.6.RELEASE</version>
+            <version>6.0.0</version>
         </dependency>
         <!-- 解析excel使用的包结束 -->
         <!-- ftp上传 ，ssh执行linux命令-->
